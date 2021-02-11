@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <nav-bar></nav-bar>
+  <main>
+    <router-view></router-view>
+  </main>
+  <foot></foot>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/layout/NavBar.vue';
+import Foot from './components/layout/Foot.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBar,
+    Foot
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family:  Georgia, "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
+
+/* Styling below are for the NavBar and Foot components */
+ .nav-links a {
+        position: relative;
+  }
+
+  .nav-links a::before {
+    position: absolute;
+    content: "";
+    height: 0.1rem;
+    right: 0;
+    width: 0%;
+    transition: all 0.3s linear;
+    bottom: -2px;
+}
+
+  .nav-links a:hover::before {
+    left: 0;
+    width: 100%;
+  }
 </style>
