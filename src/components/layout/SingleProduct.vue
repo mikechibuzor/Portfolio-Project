@@ -1,7 +1,7 @@
 <template>
-    <div class="singleProduct  ">
+    <div class="singleProduct cursor-pointer shadow-sm p-4 overflow-hidden transition-all duration-300 ease-linear h-64 ">
         <div class="prodImg">
-            <img src="../../assets/Img/thirdImage.png" alt="third product image">
+            <img :src='imgsource'  alt="third product image">
         </div>
         <div class="catText p-1">
             <h3 class="text-lg">Category 3</h3>
@@ -13,18 +13,19 @@
 <script>
 export default {
     props: ['imgsource'],
+    methods: {
+      checkSource(){
+        console.log(this.imgsource);
+      }
+    },
+    mounted(){
+      this.checkSource();
+    }
 }
 </script>
 
-<style>
-.singleProduct {
-  /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); */
-  cursor: pointer;
-  height: 45vh;
-  overflow: hidden;
-  transition: all 0.3s linear;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), -1px -1px rgba(0, 0, 0, 0.2);
-}
+<style scoped>
+
 
 .singleProduct:hover {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px #eee;
@@ -40,5 +41,4 @@ export default {
 .singleProduct .prodImg {
   height: 80%;
 }
-
 </style>

@@ -22,63 +22,8 @@
             <h2 class="text-xl  xl:text-2xl">Shop by category</h2>
             <h4 class="text-sm xl:text-base ">SHOP ALL PRODUCTS</h4>
         </div>
-        <div class="products border-1 px-16 pb-10 grid grid-cols-1  xl:grid-cols-3 gap-y-10 gap-x-20  ">
-            <single-product></single-product>
-            <div class="singleProduct  ">
-                <div class="prodImg">
-                    <img src="../assets/Img/firstImage.jpg" alt="first product image">
-                </div>
-                <div class="catText p-1">
-                    <h3 class="text-lg">Category 1</h3>
-                    <a href="#" class="underline text-red-400 text-sm ">SHOP CATEGORY</a>
-                </div>
-            </div>
-            <div class="singleProduct   ">
-                <div class="prodImg">
-                    <img src="../assets/Img/secondImage.png" alt="second product image">
-                </div>
-                <div class="catText p-1">
-                    <h3 class="text-lg">Category 2</h3>
-                    <a href="#" class="underline text-red-400 text-sm ">SHOP CATEGORY</a>
-                </div>
-            </div>
-            <div class="singleProduct  ">
-                <div class="prodImg">
-                    <img src="../assets/Img/thirdImage.png" alt="third product image">
-                </div>
-                <div class="catText p-1">
-                    <h3 class="text-lg">Category 3</h3>
-                    <a href="#" class="underline text-red-400 text-sm ">SHOP CATEGORY</a>
-                </div>
-            </div>
-            <div class="singleProduct  ">
-                <div class="prodImg">
-                    <img src="../assets/Img/fourthImage.jpg" alt="fourth product image">
-                </div>
-                <div class="catText p-1">
-                    <h3 class="text-lg">Category 4</h3>
-                    <a href="#" class="underline text-red-400 text-sm ">SHOP CATEGORY</a>
-                </div>
-            </div>
-            <div class="singleProduct  ">
-                <div class="prodImg">
-                    <img src="../assets/Img/fifthImage.jpg" alt="Fifth Product Image">
-                </div>
-                <div class="catText p-1">
-                    <h3 class="text-lg">Category 5</h3>
-                    <a href="#" class="underline text-red-400 text-sm ">SHOP CATEGORY</a>
-                </div>
-            </div>
-            <div class="singleProduct  ">
-                <div class="prodImg">
-                    <img src="../assets/Img/sixthImage.jpg" alt="Sixth Product Image">
-                </div>
-                <div class="catText p-1">
-                    <h3 class="text-lg">Category 6</h3>
-                    <a href="#" class="underline text-red-400 text-sm ">SHOP CATEGORY</a>
-                </div>
-            </div>
-          
+        <div class="products border-1 px-8 pb-10 grid grid-cols-1  xl:grid-cols-3 gap-y-10 gap-x-20  ">
+            <single-product v-for="category in categories" :imgsource="category" :key="category"></single-product>
         </div>   
     </div>
     <!-- Category ends -->
@@ -92,6 +37,26 @@ export default {
   components:{
     Carousel,
     SingleProduct
+  },
+  data(){
+      return {
+          // categories: [
+          //     "../assets/Img/firstImage.jpg",
+          //      "../assets/Img/secondImage.png",
+          //      "../assets/Img/thirdImage.png",
+          //      "../assets/Img/fourthImage.png",  
+          //      "../assets/Img/fifthImage.png", 
+          //      "../assets/Img/sixthImage.png",           
+          // ]
+          categories: [
+            "../assets/logo.jpg",
+            "../assets/logo.jpg",
+            "../assets/logo.jpg",
+            "../assets/logo.jpg",
+            "../assets/logo.jpg",
+            "../assets/logo.jpg",
+          ]
+      }
   }
 }
 </script>
@@ -116,29 +81,7 @@ h2 {
   background: linear-gradient(90deg, #f04c39 50.19%, #f6a73e 100%);
 }
 
-.singleProduct {
-  /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); */
-  cursor: pointer;
-  height: 45vh;
-  overflow: hidden;
-  transition: all 0.3s linear;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), -1px -1px rgba(0, 0, 0, 0.2);
-}
 
-.singleProduct:hover {
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px #eee;
-}
-.singleProduct .prodImg img {
-  transition: all 0.3s linear;
-}
-
-.singleProduct:hover .prodImg img {
-  transform: scale(1.03);
-}
-
-.singleProduct .prodImg {
-  height: 80%;
-}
 
 .latest-arrivals {
   background-color: rgba(107, 52, 63, 0.651);
