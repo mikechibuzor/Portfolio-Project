@@ -7,7 +7,7 @@ module.exports = {
         "pure-blue": "blue",
       },
       height: {
-        customHeight: {
+        "custom-height": {
           "10": "10vh",
           "20": "20vh",
           "30": "30vh",

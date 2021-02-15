@@ -1,5 +1,6 @@
 <template>
-  <swiper effect="fade"
+  <swiper class="h-80 bg-pure-blue"
+    effect="fade"
     :slides-per-view="3"
     :space-between="50"
     naavigation

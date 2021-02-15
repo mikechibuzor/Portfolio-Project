@@ -1,10 +1,10 @@
 <template>
-    <div class="singleProduct cursor-pointer shadow-sm p-4 overflow-hidden transition-all duration-300 ease-linear h-64 ">
+    <div class="singleProduct cursor-pointer shadow-sm p-4 overflow-hidden transition-all duration-300 ease-linear h-64">
         <div class="prodImg">
-            <img :src='imgsource'  alt="third product image">
+            <img :src='category.categoryImage'  :alt="category.name">
         </div>
         <div class="catText p-1">
-            <h3 class="text-lg">Category 3</h3>
+            <h3 class="text-lg">{{ category.name }}</h3>
             <a href="#" class="underline text-red-400 text-sm ">SHOP CATEGORY</a>
         </div>
     </div>
@@ -12,10 +12,10 @@
 
 <script>
 export default {
-    props: ['imgsource'],
+    props: ['category'],
     methods: {
       checkSource(){
-        console.log(this.imgsource);
+        console.log(this.category);
       }
     },
     mounted(){
