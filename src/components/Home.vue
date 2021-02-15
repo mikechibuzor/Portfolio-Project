@@ -33,7 +33,7 @@
             <h2 class="text-center text-white text-2xl">Latest Arrivals</h2>
         </div>
         <div class="latest-products grid grid-cols-1 xl:grid-cols-4 px-6 xl:px-16 gap-3">
-            <latest-product v-for="lp in latestProducts" :latestProduct='lp' :key="lp"></latest-product>
+            <latest-product v-for="lp in latestProducts" :latestProduct='lp' :key="lp.name"></latest-product>
         </div>
         <div class="bottom p-8 flex items-center justify-center">
             <button class=" shopBtn text-white transition-all duration-300 ease-in-out px-4 py-1 text-sm">Shop All Products</button>
@@ -58,7 +58,7 @@ export default {
         categories: [
            {
              name: 'Category 1',
-             categoryImage: '../../assets/logo.jpg',
+             categoryImage: '../assets/images/firstImage.jpg',
            } ,         
            {
              name: 'Category 2',
@@ -66,52 +66,52 @@ export default {
            } ,         
            {
              name: 'Category 3',
-             categoryImage: '../../assets/logo.jpg'
+             categoryImage: '../assets/logo.jpg'
            } ,         
            {
              name: 'Category 4',
-             categoryImage: '../../assets/logo.jpg'
+             categoryImage: '../assets/logo.jpg'
            } ,         
            {
              name: 'Category 5',
-             categoryImage: '../../assets/logo.jpg'
+             categoryImage: '../assets/logo.jpg'
            } ,         
            {
              name: 'Category 6',
-             categoryImage: '../../assets/logo.jpg'
+             categoryImage: '../assets/logo.jpg'
            } ,         
         ],
         latestProducts: [
           {
-            productImage: "../assets/Img/firstImage.jpg",
+            productImage: "../assets/images/firstImage.jpg",
             productPrice: '10000.00'
           },
           {
-            productImage: "../assets/Img/firstImage.jpg",
+            productImage: "../assets/images/firstImage.jpg",
             productPrice: '5000.00'
           },
           {
-            productImage: "../assets/Img/firstImage.jpg",
+            productImage: "../assets/images/firstImage.jpg",
             productPrice: '13500.00'
           },
           {
-            productImage: "../assets/Img/firstImage.jpg",
+            productImage: "../assets/images/firstImage.jpg",
             productPrice: '12000.00'
           },
           {
-            productImage: "../assets/Img/firstImage.jpg",
+            productImage: "../assets/images/firstImage.jpg",
             productPrice: '9000.00'
           },
           {
-            productImage: "../assets/Img/firstImage.jpg",
+            productImage: "../assets/images/firstImage.jpg",
             productPrice: '14800.00'
           },
           {
-            productImage: "../assets/Img/firstImage.jpg",
+            productImage: "../assets/images/firstImage.jpg",
             productPrice: '14800.00'
           },
           {
-            productImage: "../assets/Img/firstImage.jpg",
+            productImage: "../assets/images/firstImage.jpg",
             productPrice: '14800.00'
           },
         ]
@@ -132,7 +132,6 @@ h2 {
 }
 
 .shopBtn,
-.add-2-cart,
 .who-we-are {
   background: linear-gradient(90deg, #f04c39 50.19%, #f6a73e 100%);
 }

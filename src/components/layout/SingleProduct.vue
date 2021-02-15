@@ -15,7 +15,7 @@ export default {
     props: ['category'],
     methods: {
       checkSource(){
-        console.log(this.category);
+        console.log(this.category.categoryImage);
       }
     },
     mounted(){
