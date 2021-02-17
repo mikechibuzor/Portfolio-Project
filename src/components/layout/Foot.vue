@@ -7,7 +7,7 @@
         </div>
         <div class="nav-links footer col-span-4" id="footLinks">
             <ul class="md:flex justify-center xl:justify-between pr-8 text-white ">
-                <li class="ml-6 mb-2 xl:mb-0"><router-link class="text-sm" to='/home'>Home</router-link></li>
+                <li class="ml-6 mb-2 xl:mb-0"><router-link class="text-sm " to='/home'>Home</router-link></li>
                 <li class="ml-6 mb-2 xl:mb-0"><router-link to='/about-us' class="text-sm">About Us</router-link></li>
                 <li class="ml-6 mb-2 xl:mb-0"><router-link to='/shop' class="text-sm">Shop</router-link></li>
                 <li class="ml-6 mb-2 xl:mb-0"><router-link to='/blog' class="text-sm">Blog</router-link></li>
@@ -33,9 +33,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     
     .footer.nav-links a::before {
         background: white;
+    }
+
+    .footer.nav-links a.router-link-active {
+        color: white;
     }
 </style>

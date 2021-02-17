@@ -43,9 +43,9 @@
 </template>
 
 <script>
-import Carousel from './Utilities/Carousel.vue';
-import SingleProduct from './layout/SingleProduct.vue';
-import LatestProduct from './layout/LatestProduct.vue';
+import Carousel from '../Utilities/Carousel.vue';
+import SingleProduct from '../layout/SingleProduct.vue';
+import LatestProduct from '../layout/LatestProduct.vue';
 
 export default {
   components:{

@@ -3,7 +3,7 @@
   <!-- First View Starts -->
         <div class="first-view  h-height90 w-screen">
             <div class="banner flex items-center relative justify-center">
-                <img :src="require('../assets/images/5f71e348e62ec 1 (1).jpg')" class="absolute w-full z-10 top-0 left-0 right-0 bottom-0 h-full object-cover " alt="">
+                <img :src="require('../../assets/images/5f71e348e62ec 1 (1).jpg')" class="absolute w-full z-10 top-0 left-0 right-0 bottom-0 h-full object-cover " alt="">
                 <h1 class="text-5xl text-white z-20">About Us</h1>
             </div>
             <div class="first-view-bottom z-30  relative ">
@@ -50,7 +50,7 @@
 
         <main class="px-6 xl:px-16 py-8  md:mt-0 items-center w-screen grid grid-cols-1 xl:grid-cols-2 gap-y-8">
             <div class="box  ">
-                <img :src="require('../assets/images/Rectangle 19.jpg')" alt="">
+                <img :src="require('../../assets/images/Rectangle 19.jpg')" alt="">
             </div>
             <div class="box  bg-red-500 p-5 ">
                 <h3 class="text-xl xl:text-3xl text-white mt-0 xl:mt-4 mb-1 xl:mb-4">About Us</h3>
@@ -66,7 +66,7 @@
                 </p>
             </div>  
             <div class="box  bg-gray-300">
-                <img :src="require('../assets/images/Rectangle 22.jpg')" alt="">
+                <img :src="require('../../assets/images/Rectangle 22.jpg')" alt="">
             </div>
         </main>
 </template>
