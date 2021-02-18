@@ -22,7 +22,7 @@
           <h4 class="text-sm xl:text-base ">SHOP ALL PRODUCTS</h4>
       </div>
       <div class="products border-1 px-8 pb-10 grid grid-cols-1  xl:grid-cols-3 gap-y-10 gap-x-20  ">
-          <single-product v-for="category in categories" :category="category" :key="category"></single-product>
+          <single-product v-for="category in getCategories" :category="category" :key="category"></single-product>
       </div>   
   </div>
     <!-- Category ends -->
@@ -33,7 +33,7 @@
             <h2 class="text-center text-white text-2xl">Latest Arrivals</h2>
         </div>
         <div class="latest-products grid grid-cols-1 xl:grid-cols-4 px-6 xl:px-16 gap-3">
-            <latest-product v-for="lp in latestProducts" :latestProduct='lp' :key="lp.name"></latest-product>
+            <latest-product v-for="latestProduct in getLatestProducts" :latestProduct='latestProduct' :key="latestProduct.name"></latest-product>
         </div>
         <div class="bottom p-8 flex items-center justify-center">
             <button class=" shopBtn text-white transition-all duration-300 ease-in-out px-4 py-1 text-sm">Shop All Products</button>
@@ -47,76 +47,21 @@ import Carousel from '../Utilities/Carousel.vue';
 import SingleProduct from '../layout/SingleProduct.vue';
 import LatestProduct from '../layout/LatestProduct.vue';
 
+
 export default {
   components:{
     Carousel,
     SingleProduct,
     LatestProduct
   },
-  data(){
-      return {
-        categories: [
-           {
-             name: 'Category 1',
-             categoryImage: '../assets/images/firstImage.jpg',
-           } ,         
-           {
-             name: 'Category 2',
-             categoryImage: '../assets/logo.jpg'
-           } ,         
-           {
-             name: 'Category 3',
-             categoryImage: '../assets/logo.jpg'
-           } ,         
-           {
-             name: 'Category 4',
-             categoryImage: '../assets/logo.jpg'
-           } ,         
-           {
-             name: 'Category 5',
-             categoryImage: '../assets/logo.jpg'
-           } ,         
-           {
-             name: 'Category 6',
-             categoryImage: '../assets/logo.jpg'
-           } ,         
-        ],
-        latestProducts: [
-          {
-            productImage: "../assets/images/firstImage.jpg",
-            productPrice: '10000.00'
-          },
-          {
-            productImage: "../assets/images/firstImage.jpg",
-            productPrice: '5000.00'
-          },
-          {
-            productImage: "../assets/images/firstImage.jpg",
-            productPrice: '13500.00'
-          },
-          {
-            productImage: "../assets/images/firstImage.jpg",
-            productPrice: '12000.00'
-          },
-          {
-            productImage: "../assets/images/firstImage.jpg",
-            productPrice: '9000.00'
-          },
-          {
-            productImage: "../assets/images/firstImage.jpg",
-            productPrice: '14800.00'
-          },
-          {
-            productImage: "../assets/images/firstImage.jpg",
-            productPrice: '14800.00'
-          },
-          {
-            productImage: "../assets/images/firstImage.jpg",
-            productPrice: '14800.00'
-          },
-        ]
-      }
-  }
+  computed:{
+    getCategories(){
+      return this.$store.getters['categories/getCategories'];
+    },
+    getLatestProducts(){
+      return this.$store.getters['latestProducts/getLatestProducts']
+    },
+  },
 }
 </script>
 

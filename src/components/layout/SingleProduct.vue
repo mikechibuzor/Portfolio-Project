@@ -18,9 +18,6 @@ export default {
         console.log(this.category.categoryImage);
       }
     },
-    mounted(){
-      this.checkSource();
-    }
 }
 </script>
 
