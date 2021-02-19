@@ -1,7 +1,7 @@
 <template>
     <div class="singleProduct cursor-pointer shadow-sm p-4 overflow-hidden transition-all duration-300 ease-linear h-64">
         <div class="prodImg">
-            <img :src='require(category.categoryImage)'  :alt="category.name">
+            <img :src='category.categoryImage'  :alt="category.name">
         </div>
         <div class="catText p-1">
             <h3 class="text-lg">{{ category.name }}</h3>
