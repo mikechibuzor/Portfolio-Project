@@ -1,19 +1,19 @@
 <template>
-    <div class="laProduct h-64 cursor-pointer transition-all duration-300 ease-linear my-3">
+    <div class="laProduct h-72 cursor-pointer transition-all duration-300 ease-linear my-3">
         <div class="prodImg">
-            <img :src="latestProduct.productImage" />
+            <img :src="product.image" />
         </div>
         <div class="catText p-1 grid pt-1 pb-3 bg-white items-center justify-items-center">
-            <h3 class="text-lg">Product One</h3>
-            <p>{{ latestProduct.price }}</p>
-            <button class="add-2-cart px-4 py-1 text-sm text-white transition-all duration-300 ease-linear hover:text-white hover:bg-black cursor-pointer">ADD TO CART</button>
+          <h3 class="text-bold">{{ product.title }}</h3>
+            <p class="mb-1 text-xs">N{{ product.price }}</p>
+            <button class="add-2-cart  px-4 py-1 text-xs text-white transition-all duration-300 ease-linear hover:text-white hover:bg-black cursor-pointer">ADD TO CART</button>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    props: ['latestProduct'],
+    props: ['product'],
 }
 </script>
 

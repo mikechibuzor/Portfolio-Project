@@ -33,7 +33,7 @@
             <h2 class="text-center text-white text-2xl">Latest Arrivals</h2>
         </div>
         <div class="latest-products grid grid-cols-1 xl:grid-cols-4 px-6 xl:px-16 gap-3">
-            <latest-product v-for="latestProduct in getLatestProducts" :latestProduct='latestProduct' :key="latestProduct.name"></latest-product>
+            <Product v-for="product in getLatestProducts" :product='product' :key="product.id" />
         </div>
         <div class="bottom p-8 flex items-center justify-center">
             <button class=" shopBtn text-white transition-all duration-300 ease-in-out px-4 py-1 text-sm">Shop All Products</button>
@@ -45,14 +45,14 @@
 <script>
 import Carousel from '../Utilities/Carousel.vue';
 import SingleProduct from '../layout/SingleProduct.vue';
-import LatestProduct from '../layout/LatestProduct.vue';
+import Product from '../layout/product.vue';
 
 
 export default {
   components:{
     Carousel,
     SingleProduct,
-    LatestProduct
+    Product
   },
   computed:{
     getCategories(){
