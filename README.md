@@ -1,1 +1,1 @@
-An E-commerce website (second project with VueJs)
+An E-commerce website (second project with VueJs and i used tailwindcss too)
