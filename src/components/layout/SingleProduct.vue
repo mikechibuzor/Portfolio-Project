@@ -21,6 +21,7 @@ export default {
 
 .singleProduct:hover {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px #eee;
+  transform: scale(1.02);
 }
 .singleProduct .prodImg img {
   transition: all 0.3s linear;

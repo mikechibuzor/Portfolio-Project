@@ -1,30 +1,31 @@
 <template>
-  <swiper class="h-80 bg-pure-blue"
+  <swiper class="h-height60 "
     effect="fade"
     :slides-per-view="3"
     :space-between="50"
     naavigation
     :pagination = '{ clickable: true }'
-    @swiper="onSwiper"
-    @slideChange="onSlideChange"
+    :controller="{ control: controlledSwiper }"
   >
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide class="bg-yellow-400 flex items-center justify-center">Slide 1</swiper-slide>
+    <swiper-slide class="bg-yellow-500 flex items-center justify-center">Slide 2</swiper-slide>
+    <swiper-slide class="bg-yellow-600 flex items-center justify-center">Slide 3</swiper-slide>
     ...
   </swiper>
+
 </template>
 <script>
 
-    import SwiperCore, { Navigation, Pagination, EffectFade } from 'swiper';
+  import SwiperCore, { Navigation, Pagination, EffectFade, Autoplay  } from 'swiper';
 
-    // Import Swiper Vue.js components
-    import { Swiper, SwiperSlide } from 'swiper/vue';
+  // Import Swiper Vue.js components
+  import { Swiper, SwiperSlide } from 'swiper/vue';
 
     // install Swiper modules
-  SwiperCore.use([Navigation, Pagination, EffectFade]);
+  SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay ]);
 
   // Import Swiper styles
+
   import 'swiper/swiper.scss';
   import 'swiper/components/navigation/navigation.scss';
   import 'swiper/components/pagination/pagination.scss';
@@ -35,13 +36,10 @@
       Swiper,
       SwiperSlide,
     },
-    methods: {
-      onSwiper(swiper) {
-        console.log(swiper);
-      },
-      onSlideChange() {
-        console.log('slide change');
-      },
+     data() {
+      return {
+        controlledSwiper: null,
+      };
     },
   };
 </script>

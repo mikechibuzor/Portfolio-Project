@@ -1,7 +1,7 @@
 <template>
   <p>Shop now</p>
 
-   <div class="first-view  h-height70  w-screen">
+   <div class="first-view  h-height60  w-screen">
         <Banner nameofpage="Shop" />
     </div>
     <!-- First View Ends -->
