@@ -8,78 +8,80 @@
     <!-- First View Ends -->
 
   <main class="grid bg-white grid-cols-1 xl:grid-cols-3 px-6 xl:px-16 py-12 gap-8 w-screen">
-    <div class=" story h-height50 shadow-md transition duration-350 cursor-pointer">
+    <a href="#">
+      <div class=" story h-height55 shadow-md transition duration-350 cursor-pointer">
         <div class="img overflow-hidden h-4/6 ">
             <img class="object-contain w-full" src="../../assets/images/eightImage.jpg" alt="">
         </div>
-        <div class="text h-2/6 px-2">
+        <div class="text h-2/6 px-2 flex flex-col items-start">
             <h5 class="text-sm my-2 text-gray-500">Company</h5>
-            <h3 class="text-2xl mb-1 font-medium"> My First Blog Post</h3>
-            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi.</p>
+            <h3 class="text-2xl mb-2 font-medium"> My First Blog Post</h3>
+            <p class="text-sm text-left text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi.</p>
         </div>
     </div>
+    </a>
 
     <a href="#">
-      <div class="story h-height50 shadow-md transition duration-350 cursor-pointer">
+      <div class="story h-height55 shadow-md transition duration-350 cursor-pointer">
         <div class="img overflow-hidden h-4/6 ">
             <img class="object-contain w-full" src="../../assets/images/eightImage.jpg" alt="">
         </div>
-        <div class="text h-2/6 px-2">
+        <div class="text h-2/6 px-2 flex flex-col items-start">
             <h5 class="text-sm my-2 text-gray-500">Company</h5>
-            <h3 class="text-2xl mb-1 font-medium"> My First Blog Post</h3>
-            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi.</p>
+            <h3 class="text-2xl mb-2 font-medium"> My First Blog Post</h3>
+            <p class="text-sm text-left text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi.</p>
         </div>
       </div>
     </a>
 
     <a href="#">
-      <div class="story h-height50 shadow-md transition duration-350 cursor-pointer">
+      <div class="story h-height55 shadow-md transition duration-350 cursor-pointer">
       <div class="img overflow-hidden h-4/6">
           <img class="object-contain w-full" src="../../assets/images/eightImage.jpg" alt="">
       </div>
-        <div class="text h-2/6 px-2">
+        <div class="text h-2/6 px-2 flex flex-col items-start">
             <h5 class="text-sm my-2 text-gray-500">Company</h5>
-            <h3 class="text-2xl mb-1 font-medium"> My First Blog Post</h3>
-            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi.</p>
+            <h3 class="text-2xl mb-2 font-medium"> My First Blog Post</h3>
+            <p class="text-sm text-left text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi.</p>
         </div>
     </div>
     </a>
 
     <a href="#">
-      <div class="story h-height50 shadow-md transition duration-350 cursor-pointer">
+      <div class="story h-height55 shadow-md transition duration-350 cursor-pointer">
         <div class="img overflow-hidden h-4/6 ">
             <img class="object-contain w-full" src="../../assets/images/eightImage.jpg" alt="">
         </div>
-        <div class="text h-2/6 px-2">
+        <div class="text h-2/6 px-2 flex flex-col items-start">
             <h5 class="text-sm my-2 text-gray-500">Company</h5>
-            <h3 class="text-2xl mb-1 font-medium"> My First Blog Post</h3>
-            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi.</p>
+            <h3 class="text-2xl mb-2 font-medium"> My First Blog Post</h3>
+            <p class="text-sm text-left text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi.</p>
         </div>
     </div>
     </a>
 
     <a href="#">
-      <div class="story h-height50 shadow-md transition duration-350 cursor-pointer">
+      <div class="story h-height55 shadow-md transition duration-350 cursor-pointer">
         <div class="img overflow-hidden h-4/6 ">
             <img class="object-contain w-full"  src="../../assets/images/eightImage.jpg" alt="">
          </div>
-        <div class="text h-2/6 px-2">
+        <div class="text h-2/6 px-2 flex flex-col items-start">
           <h5 class="text-sm my-2 text-gray-500">Company</h5>
-          <h3 class="text-2xl mb-1 font-medium"> My First Blog Post</h3>
-          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi.</p>
+          <h3 class="text-2xl mb-2 font-medium"> My First Blog Post</h3>
+          <p class="text-sm text-left text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi.</p>
         </div>
       </div>
     </a>
 
     <a href="#">
-      <div class="story h-height50 shadow-md transition duration-350 cursor-pointer">
+      <div class="story h-height55 shadow-md transition duration-350 cursor-pointer">
         <div class="img overflow-hidden h-4/6">
           <img class="object-contain w-full" src="../../assets/images/eightImage.jpg" alt="">
         </div>
-      <div class="text h-2/6 px-2">
+      <div class="text h-2/6 px-2 flex flex-col items-start">
         <h5 class="text-sm my-2 text-gray-500">Company</h5>
-        <h3 class="text-2xl mb-1 font-medium"> My First Blog Post</h3>
-        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi.</p>
+        <h3 class="text-2xl mb-2 font-medium"> My First Blog Post</h3>
+        <p class="text-sm text-left text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi.</p>
         </div>
       </div>
     </a>

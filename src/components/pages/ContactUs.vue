@@ -14,22 +14,22 @@
         <form action="#">
 
           <div class="form-element w-full flex flex-col mb-4">
-              <label for="username" class="mb-1 xl:mb-2 text-sm xl:text-base">Your Name</label>
+              <label for="username" class="mb-1 xl:mb-2 text-sm xl:text-base text-gray-600">Your Name</label>
               <input placeholder="Chibuzor" type="text" class="text-sm outline-none px-2 py-1 bg-gray-100" name="username" id="username" />
           </div>
 
           <div class="form-element w-full flex flex-col mb-4">
-              <label for="email" class="mb-1 xl:mb-2 text-sm xl:text-base">Email</label>
+              <label for="email" class="mb-1 xl:mb-2 text-sm xl:text-base text-gray-600">Email</label>
               <input placeholder="iwuagwuchibuzor@gmail.com" type="email" class="text-sm outline-none px-2 py-1 bg-gray-100" name="email" id="email" />
           </div>  
 
           <div class="form-element w-full flex flex-col mb-4">
-              <label for="number" class="mb-1 xl:mb-2 text-sm xl:text-base">Phone Number</label>
+              <label for="number" class="mb-1 xl:mb-2 text-sm xl:text-base text-gray-600">Phone Number</label>
               <input placeholder="08094939264" type="number" class="text-sm outline-none px-2 py-1 bg-gray-100" name="number" id="number" />
           </div>                    
 
           <div class="form-element w-full flex flex-col mb-4">
-              <label for="comment" class="mb-1 xl:mb-2 text-sm xl:text-base">Message</label>
+              <label for="comment" class="mb-1 xl:mb-2 text-sm xl:text-base text-gray-600">Message</label>
               <textarea placeholder="Your message goes here..."  name="comment" id="comment" class="h-height30 text-sm xl:text-base w-full p-2 outline-none bg-gray-100"></textarea>
           </div>
 
