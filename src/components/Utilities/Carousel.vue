@@ -7,13 +7,20 @@
     :pagination = '{ clickable: true }'
     :controller="{ control: controlledSwiper }"
   >
-    <swiper-slide class="bg-yellow-400 flex items-center justify-center">Slide 1</swiper-slide>
-    <swiper-slide class="bg-yellow-500 flex items-center justify-center">Slide 2</swiper-slide>
-    <swiper-slide class="bg-yellow-600 flex items-center justify-center">Slide 3</swiper-slide>
-    ...
+    <swiper-slide class="bg-yellow-400 flex items-center justify-center">
+      <img class=" object-cover md:object-fill w-full h-full" :src="require('../../../public/assets/images/5f71e348e62ec 1.jpg')" />
+    </swiper-slide>
+    <swiper-slide class="bg-yellow-500 flex items-center justify-center">
+      <img  class=" object-cover md:object-fill w-full h-full" :src="require('../../../public/assets/images/5f71e348e62ec 1 (2).jpg')" />
+    </swiper-slide>
+    <swiper-slide class="bg-yellow-600 flex items-center justify-center">
+      <img class=" object-cover md:object-fill w-full h-full" :src="require('../../../public/assets/images/fourthImage.jpg')" />
+    </swiper-slide>
+    
   </swiper>
 
 </template>
+
 <script>
 
   import SwiperCore, { Navigation, Pagination, EffectFade, Autoplay  } from 'swiper';
@@ -43,3 +50,9 @@
     },
   };
 </script>
+
+<style scoped>
+  /* img{
+     object-cover md:object-fill: cover;
+  } */
+</style>

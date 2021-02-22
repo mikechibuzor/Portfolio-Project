@@ -48,7 +48,7 @@
 
     <main class="px-6 xl:px-16 py-8  md:mt-0 items-center w-screen grid grid-cols-1 xl:grid-cols-2 gap-y-8">
         <div class="box  ">
-            <img :src="require('../../assets/images/Rectangle 19.jpg')" alt="">
+            <img :src="require('../../../public/assets/images/Rectangle 19.jpg')" alt="">
         </div>
         <div class="box  bg-red-500 p-5 ">
             <h3 class="text-xl xl:text-3xl text-white mt-0 xl:mt-4 mb-1 xl:mb-4">About Us</h3>
@@ -64,7 +64,7 @@
             </p>
         </div>  
         <div class="box  bg-gray-300">
-            <img :src="require('../../assets/images/Rectangle 22.jpg')" alt="">
+            <img :src="require('../../../public/assets/images/Rectangle 22.jpg')" alt="">
         </div>
     </main>
 </template>

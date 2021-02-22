@@ -11,7 +11,7 @@
     <a href="#">
       <div class=" story h-height55 shadow-md transition duration-350 cursor-pointer">
         <div class="img overflow-hidden h-4/6 ">
-            <img class="object-contain w-full" src="../../assets/images/eightImage.jpg" alt="">
+            <img class="object-contain w-full" src="../../../public/assets/images/eightImage.jpg" alt="">
         </div>
         <div class="text h-2/6 px-2 flex flex-col items-start">
             <h5 class="text-sm my-2 text-gray-500">Company</h5>
@@ -24,7 +24,7 @@
     <a href="#">
       <div class="story h-height55 shadow-md transition duration-350 cursor-pointer">
         <div class="img overflow-hidden h-4/6 ">
-            <img class="object-contain w-full" src="../../assets/images/eightImage.jpg" alt="">
+            <img class="object-contain w-full" src="../../../public/assets/images/eightImage.jpg" alt="">
         </div>
         <div class="text h-2/6 px-2 flex flex-col items-start">
             <h5 class="text-sm my-2 text-gray-500">Company</h5>
@@ -37,7 +37,7 @@
     <a href="#">
       <div class="story h-height55 shadow-md transition duration-350 cursor-pointer">
       <div class="img overflow-hidden h-4/6">
-          <img class="object-contain w-full" src="../../assets/images/eightImage.jpg" alt="">
+          <img class="object-contain w-full" src="../../../public/assets/images/eightImage.jpg" alt="">
       </div>
         <div class="text h-2/6 px-2 flex flex-col items-start">
             <h5 class="text-sm my-2 text-gray-500">Company</h5>
@@ -50,7 +50,7 @@
     <a href="#">
       <div class="story h-height55 shadow-md transition duration-350 cursor-pointer">
         <div class="img overflow-hidden h-4/6 ">
-            <img class="object-contain w-full" src="../../assets/images/eightImage.jpg" alt="">
+            <img class="object-contain w-full" src="../../../public/assets/images/eightImage.jpg" alt="">
         </div>
         <div class="text h-2/6 px-2 flex flex-col items-start">
             <h5 class="text-sm my-2 text-gray-500">Company</h5>
@@ -63,7 +63,7 @@
     <a href="#">
       <div class="story h-height55 shadow-md transition duration-350 cursor-pointer">
         <div class="img overflow-hidden h-4/6 ">
-            <img class="object-contain w-full"  src="../../assets/images/eightImage.jpg" alt="">
+            <img class="object-contain w-full"  src="../../../public/assets/images/eightImage.jpg" alt="">
          </div>
         <div class="text h-2/6 px-2 flex flex-col items-start">
           <h5 class="text-sm my-2 text-gray-500">Company</h5>
@@ -76,7 +76,7 @@
     <a href="#">
       <div class="story h-height55 shadow-md transition duration-350 cursor-pointer">
         <div class="img overflow-hidden h-4/6">
-          <img class="object-contain w-full" src="../../assets/images/eightImage.jpg" alt="">
+          <img class="object-contain w-full" src="../../../public/assets/images/eightImage.jpg" alt="">
         </div>
       <div class="text h-2/6 px-2 flex flex-col items-start">
         <h5 class="text-sm my-2 text-gray-500">Company</h5>

@@ -2,7 +2,7 @@
     <div class="last px-2 xl:px-16 py-4 w-screen flex items-center justify-between bg-black">
         <div class="logo w-24 col-span-2">
             <a href="#">
-                <img src="../../assets/logo.jpg" alt="logo" />
+                <img src="../../../public/assets/logo.jpg" alt="logo" />
             </a>
         </div>
         <div class="nav-links footer col-span-4" id="footLinks">

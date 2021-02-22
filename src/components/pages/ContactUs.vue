@@ -105,7 +105,7 @@
       </div>
       
       <div class="map">
-          <img :src="require('../../assets/images/Rectangle 83 (1).jpg')" alt="">
+          <img :src="require('../../../public/assets/images/Rectangle 83 (1).jpg')" alt="">
       </div>
     </main>
 

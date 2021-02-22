@@ -1,11 +1,11 @@
 <template>
-    <div class="singleProduct cursor-pointer shadow-sm p-4 overflow-hidden transition-all duration-300 ease-linear h-64">
-        <div class="prodImg">
-            <img :src='category.categoryImage'  :alt="category.name">
+    <div class="singleProduct  cursor-pointer shadow-sm  overflow-hidden transition-all duration-300 ease-linear h-height41">
+        <div class="prodImg h-5/6">
+            <img class="w-full h-full" :src="publicPath + '' +category.categoryImage"  :alt="category.name">
         </div>
-        <div class="catText p-1">
-            <h3 class="text-lg">{{ category.name }}</h3>
-            <a href="#" class="underline text-red-400 text-sm ">SHOP CATEGORY</a>
+        <div class="catText p-1 pt-2 h-1/6">
+            <h3 class="text-sm">{{ category.name }}</h3>
+            <a href="#" class="underline text-red-400 text-xs ">SHOP CATEGORY</a>
         </div>
     </div>
 </template>
@@ -13,6 +13,11 @@
 <script>
 export default {
     props: ['category'],
+    data(){
+      return {
+        publicPath: process.env.BASE_URL,
+      }
+    },
 }
 </script>
 
@@ -21,17 +26,14 @@ export default {
 
 .singleProduct:hover {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px #eee;
-  transform: scale(1.02);
 }
-.singleProduct .prodImg img {
-  transition: all 0.3s linear;
+.singleProduct  img {
+  transition: all 0.2s linear;
 }
 
-.singleProduct:hover .prodImg img {
+.singleProduct:hover  img {
   transform: scale(1.03);
 }
 
-.singleProduct .prodImg {
-  height: 80%;
-}
+
 </style>

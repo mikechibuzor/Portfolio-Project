@@ -4,7 +4,7 @@
         
             <div class="logo absolute xl:static top-5 left-5 w-12 col-span-2 ">
                 <a href="#">
-                    <img src="../../assets/logo.jpg"  alt="logo" />
+                    <img src="../../../public/assets/logo.jpg"  alt="logo" />
                 </a>
             </div>
 
