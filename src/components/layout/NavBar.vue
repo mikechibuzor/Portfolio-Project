@@ -133,7 +133,7 @@
                     </ul>
                 </div>
             </div>
-    </nav>
+        </nav>
     </transition>
 </template>
 

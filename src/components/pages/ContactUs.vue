@@ -6,12 +6,12 @@
     </div>
     <!-- First View Ends -->
 
-    <main class="grid grid-cols-1 xl:grid-cols-2 gap-10 px-8 xl:px-16 py-10 w-screen ">
+    <main class="grid text-left grid-cols-1 xl:grid-cols-2 gap-10 px-8 xl:px-16 py-10 w-screen ">
       <div class=" contact-form">
        
         <h3 class="text-lg md:text-2xl mb-4">CONTACT US FOR ANY QUESTIONS</h3>
 
-        <form action="#">
+        <form action="#" >
 
           <div class="form-element w-full flex flex-col mb-4">
               <label for="username" class="mb-1 xl:mb-2 text-sm xl:text-base text-gray-600">Your Name</label>
@@ -30,14 +30,14 @@
 
           <div class="form-element w-full flex flex-col mb-4">
               <label for="comment" class="mb-1 xl:mb-2 text-sm xl:text-base text-gray-600">Message</label>
-              <textarea placeholder="Your message goes here..."  name="comment" id="comment" class="h-height30 text-sm xl:text-base w-full p-2 outline-none bg-gray-100"></textarea>
+              <textarea placeholder="Your message goes here..."  name="comment" id="comment" class=" text-gray-500 h-height30 text-sm xl:text-base w-full p-2 outline-none bg-gray-100"></textarea>
           </div>
 
           <input type="button" class=" px-8 text-white py-1 cursor-pointer" value="Send Message">
         
         </form>
 
-        </div>
+      </div>
 
         <div class="address-bar px-2 xl:px-10 w-full h-full ">
           <div class="div bg-red-500 w-full h-full py-4 xl:py-10 flex flex-col  md:justify-between">

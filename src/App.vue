@@ -24,7 +24,7 @@ export default {
   font-family:  Georgia, "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  text-align: center;
 
 }
 
