@@ -1,6 +1,6 @@
  <template>
     <transition name="resp-nav">
-        <nav ref="navBar" class="w-screen overflow-hidden h-height10  transition duration-300 relative flex justify-between xl:grid grid-cols-8 px-8 xl:px-16  items-center">
+        <nav ref="navBar" class="w-screen overflow-hidden h-20  transition duration-300 relative flex justify-between xl:grid grid-cols-8 px-8 xl:px-16  items-center">
         
             <div class="logo absolute xl:static top-2 xl:top-5 left-3 xl:left-5 h w-20 col-span-2 ">
                 <router-link to="/home">
@@ -124,7 +124,7 @@
 
             <div class="responsiveNav shadow   absolute  right-0 top-20 mb-5 left-0 ">
                 <div class="nav-links col-span-4  xl:hidden">
-                    <ul class="flex flex-col   ">
+                    <ul class="flex flex-col items-start pl-4   ">
                         <li class="mb-2"><router-link to='/home' class="text-sm">Home</router-link></li>
                         <li class="mb-2"><router-link to=/about-us class="text-sm">About Us</router-link></li>
                         <li class="mb-2"><router-link to='/shop' class="text-sm" >Shop</router-link></li>
@@ -141,7 +141,7 @@
 export default {
     methods:{
         toggleNav(){
-            this.$refs.navBar.classList.toggle('h-height30');
+            this.$refs.navBar.classList.toggle('h-60');
         }
     }
 }
@@ -170,6 +170,7 @@ export default {
 
     nav .nav-links a.router-link-active {
     color: #f04c39;
+    font-weight: bold;
     }
 
     nav .nav-links a::before {

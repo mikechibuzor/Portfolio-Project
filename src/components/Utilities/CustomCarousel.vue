@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel-container relative  h-height50">
+  <div class="carousel-container relative  h-height80">
       
       <image-slide class="absolute h-full w-full bg-yellow-200" v-for="image in imagesObject" :imageSrc="image.src" :key="image.id" :id="image.id" :altText="image.alt"></image-slide>
      
@@ -39,6 +39,10 @@ export default {
                                  </p>`
                 this.$refs.itemCircle.appendChild(div);
             });
+        },
+
+        checkMe(){
+
         }
     },
     mounted(){
