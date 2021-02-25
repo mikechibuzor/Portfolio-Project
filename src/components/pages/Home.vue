@@ -31,7 +31,7 @@
     <!-- Latest Arrivals Starts -->
     <div class="latest-arrivals  w-screen">
         <div class="head grid items-center justify-items-center  p-5 w-screen ">
-            <h2 class="text-center text-white text-2xl">Latest Arrivals</h2>
+            <h2 class="text-center text-white text-2xl xl:text-4xl">Latest Arrivals</h2>
         </div>
         <div class="latest-products grid grid-cols-1 xl:grid-cols-4 px-6 xl:px-16 gap-3">
             <Product v-for="product in getLatestProducts" :product='product' :key="product.id" />
