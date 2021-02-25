@@ -14,7 +14,6 @@
     "core-js": "^3.6.5",
     "postcss": "^7.0.35",
     "postcss-cli": "^8.3.1",
-    "swiper": "^6.4.11",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.0",
     "vue-router": "^4.0.3",

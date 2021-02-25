@@ -1,7 +1,7 @@
 <template>
   <p>Home</p>
   <div class="first-content">
-    <carousel></carousel>
+    <custom-carousel :imagesObject='imagesObject'></custom-carousel>
     
     <!-- Who we are starts -->
     <div class="who-we-are flex flex-col items-center justify-center  w-screen px-6 bg-pure-blue  xl:px-32">
@@ -43,16 +43,32 @@
 </template>
 
 <script>
-import Carousel from '../Utilities/Carousel.vue';
+import CustomCarousel from '../Utilities/CustomCarousel.vue';
 import SingleProduct from '../layout/SingleProduct.vue';
 import Product from '../layout/product.vue';
 
 
 export default {
   components:{
-    Carousel,
+    CustomCarousel,
     SingleProduct,
     Product
+  },
+  data(){
+    return{
+      imagesObject: [
+        {
+          src: 'cool',
+          id: 1,
+          alt: null
+        },
+        {
+          src: 'great',
+          id: 2,
+          alt: null
+        },
+      ]
+    }
   },
   computed:{
     getCategories(){
