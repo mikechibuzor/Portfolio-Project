@@ -67,6 +67,11 @@ export default {
           id: 2,
           alt: null
         },
+        {
+          src: 'damn',
+          id: 3,
+          alt: null
+        },
       ]
     }
   },

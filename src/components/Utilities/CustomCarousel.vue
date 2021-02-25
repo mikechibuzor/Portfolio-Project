@@ -34,8 +34,8 @@ export default {
         createItemCircle(){
             this.imagesObject.forEach(()=>{
                 const div = document.createElement('div');
-                div.innerHTML = `<p 
-                                    style="height: .5rem; width: .5rem; color: gray; margin-right: .2rem; cursor: pointer; border: 1px solid black; border-radius: 50%;">
+                div.innerHTML = `<p @click="checkMe" 
+                                    style="height: .5rem; width: .5rem; color: gray; margin-right: .4rem; cursor: pointer; border: 1px solid black; border-radius: 50%;">
                                  </p>`
                 this.$refs.itemCircle.appendChild(div);
             });
@@ -43,20 +43,13 @@ export default {
     },
     mounted(){
         this.createItemCircle();
+        console.log(this.$refs.itemCircle.children);
     }
 }
 </script>
 
 <style scoped>
 
-    .itemCirc{
-        border: 1px solid black;
-        border-radius: 50%;
-        height: 1rem;
-        width: 1rem;
-        color: red;
-        background: red;        
-    }
     .hidden{
         opacity: 0;
         pointer-events: none;
