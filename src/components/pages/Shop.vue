@@ -1,5 +1,4 @@
 <template>
-  <p>Shop now</p>
 
    <div class="first-view  h-height60  w-screen">
         <Banner nameofpage="Shop" />
