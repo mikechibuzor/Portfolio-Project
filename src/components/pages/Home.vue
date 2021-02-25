@@ -1,5 +1,5 @@
 <template>
-  <p>Home</p>
+
   <div class="first-content">
     <custom-carousel :imagesObject='imagesObject'></custom-carousel>
     

@@ -1,11 +1,11 @@
  <template>
     <transition name="resp-nav">
-        <nav ref="navBar" class="w-screen overflow-hidden h-16  transition duration-300 relative flex justify-between xl:grid grid-cols-8 px-8 xl:px-16  items-center">
+        <nav ref="navBar" class="w-screen overflow-hidden h-height10  transition duration-300 relative flex justify-between xl:grid grid-cols-8 px-8 xl:px-16  items-center">
         
-            <div class="logo absolute xl:static top-5 left-5 w-12 col-span-2 ">
-                <a href="#">
-                    <img src="../../../public/assets/logo.jpg"  alt="logo" />
-                </a>
+            <div class="logo absolute xl:static top-2 xl:top-5 left-3 xl:left-5 h w-20 col-span-2 ">
+                <router-link to="/home">
+                    <img src="../../../public/assets/cropped-Logo-2-1.png"  alt="logo" />
+                </router-link>
             </div>
 
             <div class="nav-links col-span-4 hidden xl:block">
@@ -69,7 +69,7 @@
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </div>
-                <div @click="toggleNav" class="hamContainer  relative">
+                <div @click="toggleNav" class="hamContainer z-20 relative">
                     <div class="hamburger  xl:hidden  show">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15" height="15"
@@ -122,7 +122,7 @@
         
             </div>
 
-            <div class="responsiveNav shadow   absolute  right-0 top-16 mb-5 left-0 ">
+            <div class="responsiveNav shadow   absolute  right-0 top-20 mb-5 left-0 ">
                 <div class="nav-links col-span-4  xl:hidden">
                     <ul class="flex flex-col   ">
                         <li class="mb-2"><router-link to='/home' class="text-sm">Home</router-link></li>
@@ -141,7 +141,7 @@
 export default {
     methods:{
         toggleNav(){
-            this.$refs.navBar.classList.toggle('h-56');
+            this.$refs.navBar.classList.toggle('h-height30');
         }
     }
 }
