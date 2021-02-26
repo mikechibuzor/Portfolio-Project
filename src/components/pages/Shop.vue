@@ -10,17 +10,17 @@
     <div class="head  flex w-screen px-4 xl:px-16 py-12 justify-between">
       <div class="first flex flex-col items-start ">
         <p class="text-sm text-gray-800 mb-2">
-          <span class="cursor-pointer">Home</span>|
-          <span class="2cu my-2rsor-pointer">Products</span>
+          <span class="cursor-pointer font-medium">Home</span> |
+          <span class="2cu my-2rsor-pointer font-medium">Products</span>
         </p>
-        <h2 class="text-5xl"  >Shop</h2>
+        <h2 class="text-5xl text-red-700 font-medium"  >Shop</h2>
         <p class="mt-4" >Showing all 12 results</p>
       </div>
     <div class="second">
       <select name="sort" class="cursor-pointer pl-2 pr-8 bg-gray-100 hover:bg-black hover:text-white transition duration-300 py-1  rounded-sm" id="sort">
-          <option value="Default">Default</option>
-          <option value="Default">Price</option>
-          <option value="Default">Quantity</option>    
+          <option value="Default">Default sorting</option>
+          <option value="popularity">Sort by popularity</option>
+          <option value="average">Sort by average rating</option>    
       </select>
     </div>
     </div>
@@ -32,8 +32,8 @@
         <div class="search flex flex-col items-start mb-20">
           <h2 class="text-3xl">Search</h2>
           <div class="search-container mt-4 flex">
-            <input  type="search" placeholder="Search for Product..." class="border border-gray-200 px-2 py-1 outline-none text-sm" name="" id="">
-            <input type="button" class="text-white px-2 py-1" value="Search">
+            <input  type="search" placeholder="Search for Product..." class="rounded-sm border border-gray-200 px-2 py-1 outline-none text-sm" name="" id="">
+            <input type="button" class="text-white px-2 py-1 rounded-sm" value="Search">
           </div>
         </div>
 
@@ -72,7 +72,7 @@
           <div class="slidecontainer w-full flex flex-col items-start my-4">
             <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
           </div>
-          <p class="text-sm ">From N100 - 10,000</p>
+          <p class="text-sm text-semibold ">From N100 - 10,000</p>
         </div>
         
       </aside>
