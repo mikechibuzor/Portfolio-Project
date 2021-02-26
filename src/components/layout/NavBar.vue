@@ -1,6 +1,6 @@
  <template>
     <transition name="resp-nav">
-        <nav ref="navBar" class="w-screen overflow-hidden h-20  transition duration-300 relative flex justify-between xl:grid grid-cols-8 px-8 xl:px-16  items-center">
+        <nav ref="navBar" :class='compFixedNav' class="w-screen overflow-hidden h-20  transition duration-300 relative flex justify-between xl:grid grid-cols-8 px-8 xl:px-16  items-center">
         
             <div class="logo absolute xl:static top-2 xl:top-5 left-3 xl:left-5 h w-20 col-span-2 ">
                 <router-link to="/home">
@@ -139,10 +139,32 @@
 
 <script>
 export default {
+    data(){
+        return{
+            fixedNav: false,
+        }
+    },
     methods:{
         toggleNav(){
             this.$refs.navBar.classList.toggle('h-60');
+        },
+        checkDocumentObject(){
+            const docScrollTop = document.documentElement.scrollTop;
+            if(docScrollTop > 100){
+                this.fixedNav = true;
+            }
+            else{
+                this.fixedNav = false;
+            }
         }
+    },
+    computed:{
+        compFixedNav(){
+            return { fixed: this.fixedNav }
+        }
+    },
+    mounted(){
+        window.addEventListener('scroll', this.checkDocumentObject);
     }
 }
 </script>
@@ -153,8 +175,6 @@ export default {
         width: 100%;
         object-fit: fill;
     }
-
-   
 
     nav .nav-links a {
         color: #999999;
@@ -180,6 +200,25 @@ export default {
 
     .resp-nav-enter-active{
         animation: fadeIn 5s ease-in forwards;
+    }
+
+    nav.fixed{
+    background: #ffffff;
+    z-index: 131;
+    position: fixed;
+    border-bottom: 1px solid rgb(192, 189, 189);
+    animation: fixHeader .5s ease;
+    }
+
+    @keyframes fixHeader{
+        0%{
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 
     @keyframes navGrow {
