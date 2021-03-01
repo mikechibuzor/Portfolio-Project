@@ -1,6 +1,4 @@
 <template>
-  <p>Blog</p>
-
   <!-- First View Starts -->
     <div class="first-view  h-height60  w-screen">
         <Banner nameofpage="Blog" />

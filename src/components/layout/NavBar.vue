@@ -189,25 +189,24 @@ export default {
     }
 
     nav .nav-links a.router-link-active {
-    color: #f04c39;
-    font-weight: bold;
+        color: #f04c39;
+        font-weight: bold;
     }
 
     nav .nav-links a::before {
         background: #f04c39;
     }
     
-
     .resp-nav-enter-active{
         animation: fadeIn 5s ease-in forwards;
     }
 
     nav.fixed{
-    background: #ffffff;
-    z-index: 131;
-    position: fixed;
-    border-bottom: 1px solid rgb(192, 189, 189);
-    animation: fixHeader .5s ease;
+        background: #ffffff;
+        z-index: 131;
+        position: fixed;
+        border-bottom: 1px solid rgb(192, 189, 189);
+        animation: fixHeader .5s ease;
     }
 
     @keyframes fixHeader{

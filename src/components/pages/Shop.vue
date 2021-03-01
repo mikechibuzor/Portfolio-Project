@@ -21,6 +21,8 @@
           <option value="Default">Default sorting</option>
           <option value="popularity">Sort by popularity</option>
           <option value="average">Sort by average rating</option>    
+          <option value="latest">Sort by latest</option>    
+          <option value="average">Sort by price: low to high</option>    
       </select>
     </div>
     </div>

@@ -59,17 +59,17 @@ export default {
     return{
       imagesObject: [
         {
-          src: 'cool',
+          src: 'assets/images/seventhImage.jpg',
           id: 1,
           alt: null
         },
         {
-          src: 'great',
+          src: 'assets/images/fourteenthImage.jpg',
           id: 2,
           alt: null
         },
         {
-          src: 'damn',
+          src: 'assets/images/5f71e348e62ec 1 (1).jpg',
           id: 3,
           alt: null
         },

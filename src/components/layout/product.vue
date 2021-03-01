@@ -19,14 +19,6 @@ export default {
         publicPath: process.env.BASE_URL,
       }
     },
-    methods:{
-      checkImage(){
-        console.log(this.product.image);
-      }
-    },
-    mounted(){
-      this.checkImage();
-    }
 }
 </script>
 
