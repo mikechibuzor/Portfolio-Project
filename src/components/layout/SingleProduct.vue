@@ -1,5 +1,5 @@
 <template>
-    <div class="singleProduct  cursor-pointer shadow-sm  overflow-hidden transition-all duration-300 ease-linear h-height41">
+    <div class="singleProduct  cursor-pointer shadow-sm  overflow-hidden transition-all duration-300 ease-linear h-height43">
         <div class="prodImg h-5/6">
             <img class="w-full h-full" :src="publicPath + '' +category.categoryImage"  :alt="category.name">
         </div>
