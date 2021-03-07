@@ -48,7 +48,6 @@
                     <h3 class="text-xl font-semibold mb-3">Customer Satisfaction</h3>
                     <p class="text-base text-gray-900 text-center">At Smooches, customer satisfaction is our watch word..</p>
                 </div>
-                
             </div>
         </div>
     </div>
