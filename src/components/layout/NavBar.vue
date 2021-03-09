@@ -1,6 +1,6 @@
  <template>
-    <transition name="resp-nav">
-        <nav ref="navBar" :class='compFixedNav' class="w-screen overflow-hidden h-20  transition duration-300 relative flex justify-between xl:grid grid-cols-8 px-8 xl:px-16  items-center">
+    <transition >
+        <nav  ref="navBar" :class='compFixedNav' class="w-screen overflow-hidden h-20  transition duration-300 relative flex justify-between xl:grid grid-cols-8 px-8 xl:px-16  items-center">
         
             <div class="logo absolute xl:static top-2 xl:top-5 left-3 xl:left-5 h w-20 col-span-2 ">
                 <router-link to="/home">
@@ -122,17 +122,19 @@
         
             </div>
 
-            <div class="responsiveNav shadow   absolute  right-0 top-20 mb-5 left-0 ">
-                <div class="nav-links col-span-4  xl:hidden">
-                    <ul class="flex flex-col items-start pl-4   ">
-                        <li class="mb-2"><router-link to='/home' class="text-sm">Home</router-link></li>
-                        <li class="mb-2"><router-link to=/about-us class="text-sm">About Us</router-link></li>
-                        <li class="mb-2"><router-link to='/shop' class="text-sm" >Shop</router-link></li>
-                        <li class="mb-2"><router-link to='/blog' class="text-sm">Blog</router-link></li>
-                        <li class="mb-2"><router-link to='/contact-us' class="text-sm">Contact Us</router-link></li>
-                    </ul>
+            <transition name="full-nav">
+                <div v-if="visibleFullNav" class="responsiveNav shadow   absolute  right-0 top-20 mb-5 left-0 ">
+                    <div class="nav-links col-span-4  xl:hidden">
+                        <ul class="flex flex-col items-start pl-4   ">
+                            <li class="mb-2"><router-link to='/home' class="text-sm">Home</router-link></li>
+                            <li class="mb-2"><router-link to=/about-us class="text-sm">About Us</router-link></li>
+                            <li class="mb-2"><router-link to='/shop' class="text-sm" >Shop</router-link></li>
+                            <li class="mb-2"><router-link to='/blog' class="text-sm">Blog</router-link></li>
+                            <li class="mb-2"><router-link to='/contact-us' class="text-sm">Contact Us</router-link></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </transition>
         </nav>
     </transition>
 </template>
@@ -142,11 +144,13 @@ export default {
     data(){
         return{
             fixedNav: false,
+            visibleFullNav: false
         }
     },
     methods:{
         toggleNav(){
             this.$refs.navBar.classList.toggle('h-60');
+            this.visibleFullNav = true;
         },
         checkDocumentObject(){
             const docScrollTop = document.documentElement.scrollTop;
@@ -197,8 +201,25 @@ export default {
         background: #f04c39;
     }
     
-    .resp-nav-enter-active{
+    /* .resp-nav-enter-active{
         animation: fadeIn 5s ease-in forwards;
+    } */
+
+    .full-nav-enter-from{
+        opacity: 0;
+    }
+
+    .full-nav-enter-active{
+        animation: navGrow 5s linear forwards;
+    }
+
+    .full-nav-enter-to{
+        opacity: 1;
+    }
+
+    .nav{
+        background: blanchedalmond;
+        transition: all .3s linear forwards;
     }
 
     nav.fixed{
