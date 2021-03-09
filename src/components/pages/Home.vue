@@ -110,8 +110,8 @@
         </a>
       </div>
       <div class="buttons mt-12 flex items-center justify-center">
-        <a href="#" class="transition duration-300 hover:bg-red-500 hover:text-white bg-gray-700 mr-4 rounded text-white flex items-center justify-center px-2  xl:text-base xl:px-4 py-1">Load more...</a>
-        <a href="#" class="transition duration-300 hover:bg-black hover:text-white bg-red-500 mr-4 rounded text-white flex items-center justify-center px-4 py-1">
+        <a href="#" class="transition duration-300 hover:bg-red-500 hover:text-white bg-gray-700 mr-4 rounded text-white flex text-sm items-center justify-center px-1  xl:text-base xl:px-4 py-1">Load more...</a>
+        <a href="#" class="text-sm transition duration-300 hover:bg-black hover:text-white bg-red-500 mr-4 rounded text-white flex items-center justify-center px-1 xl:px-4 py-1">
           <div class=" h-4 w-4 flex items-center justify-center mr-2" >
           
           <svg class="h-full w-full "  x="0px" y="0px"
@@ -167,7 +167,8 @@
           </g>
           </svg>
 
-          </div>Follow on instagram</a>
+          </div>Follow on instagram
+        </a>
       </div>
     </div>
     <!-- Bottom Ends  -->

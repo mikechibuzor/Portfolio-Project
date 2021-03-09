@@ -3,10 +3,11 @@ export default {
   state() {
     return {
       instagram: [],
+      getCount: 0,
     };
   },
   getters: {
-    getInstagramData(state) {
+    getFiveInstagramData(state) {
       return state.instagram;
     },
   },
