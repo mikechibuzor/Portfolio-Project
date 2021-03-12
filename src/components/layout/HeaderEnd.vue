@@ -1,6 +1,6 @@
 <template>
-  <div class="cont bg-blue-100 w-full h-full flex items-center justify-center xl:justify-between px-2 xl:px-6">
-      <router-link to="/contact-me" class="mt-6 text-text-color">Contact me</router-link>
+  <div class="cont order-3 xl:order-3 bg-blue-100 w-full h-full flex items-center justify-center xl:justify-between px-2 xl:px-6">
+      <router-link to="/contact-me" class="xl:mt-6 text-text-color">Contact me</router-link>
       <dark-mode ></dark-mode>
   </div>
 </template>

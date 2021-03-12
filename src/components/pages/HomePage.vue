@@ -78,7 +78,7 @@
           was as a PHP web developer. My primary responsiblity was to design and code web pages.
         </p>
         <p class="text-gray-500 mt-4 mb-8 xl:mb-0 text-center xl:text-left">I code in</p>
-        <div class="techStack mt-4 grid grid-cols-5 w-full justify-center px-6 xl:w-3/5 ">
+        <div class="techStack mt-4 grid grid-cols-5 w-full justify-center xl:justify-start  px-6 xl:px-0 xl:w-3/5 ">
           <div class="icon h-8 w-8">            
             <svg class="w-full h-full" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.3934 24.848L12.444 25.5547L13.1507 20.6053L25.8787 7.87733C26.4413 7.31471 27.2044 6.99864 28 6.99864C28.7957 6.99864 29.5588 7.31471 30.1214 7.87733C30.684 8.43994 31 9.20301 31 9.99866C31 10.7943 30.684 11.5574 30.1214 12.12L17.3934 24.848Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
