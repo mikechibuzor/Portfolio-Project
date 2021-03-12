@@ -30,9 +30,10 @@ export default {
   font-family: 'Quicksand', sans-serif;
  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   overflow-x: hidden;
   background-image: url('../../public/assets/images/BG.jpg');
+  background-repeat: no-repeat;
   position: relative;
 }
 
