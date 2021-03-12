@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "pure-blue": "blue",
+        "text-color": "#1B45DC",
       },
       height: {
         height10: "10vh",

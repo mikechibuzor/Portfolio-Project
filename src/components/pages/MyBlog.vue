@@ -1,5 +1,5 @@
 <template>
-  <h1 class="bg-red-100">Blogs</h1>
+  <h1 class="bg-blue-50">Blogs</h1>
 </template>
 
 <script>
