@@ -1,6 +1,6 @@
 <template>
-  <button>
-      <div class="h-3 w-8 rounded-md mt-8  bg-blue-600">
+  <button class=" absolute xl:static  ">
+      <div class="h-3 w-8 rounded-md mt-8 bg-blue-600">
          
               <p class="btn w-2/4 h-full rounded-md bg-white"></p>
           
@@ -23,5 +23,11 @@ export default {
       100%{
           transform: translateX(100%);
       }
+  }
+
+  @media screen and (max-width: 768px){
+    button{
+      top: 4rem;
+    }
   }
 </style>

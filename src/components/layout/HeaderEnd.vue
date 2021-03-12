@@ -1,7 +1,7 @@
 <template>
-  <div class="cont bg-blue-200  w-full h-full flex items-center justify-between px-6">
-      <router-link to="/contact-me" class="mt-8 text-text-color">Contact me</router-link>
-      <dark-mode></dark-mode>
+  <div class="cont bg-blue-100 w-full h-full flex items-center justify-center xl:justify-between px-2 xl:px-6">
+      <router-link to="/contact-me" class="mt-6 text-text-color">Contact me</router-link>
+      <dark-mode ></dark-mode>
   </div>
 </template>
 
@@ -28,5 +28,11 @@ export default {
     background: #1B45DC;
     bottom: 0;
     width: 100%;
+  }
+
+  @media screen and (max-width: 768px){
+    .cont{
+      flex: 0 0 33.33%;
+    }
   }
 </style>

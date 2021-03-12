@@ -1,6 +1,9 @@
 <template>
-  <nav class="w-full ">
-      <ul class="flex w-full justify-start  ">
+    <div class="toggleMenu xl:hidden w-full mt-6 ">
+        Menu
+    </div>
+  <nav class="w-full hidden xl:block ">
+      <ul class="flex flex-col xl:flex-row w-full justify-start  ">
           <li class="mr-16 mt-8"><router-link to='/home'>Home</router-link></li>
           <li class="mr-16 mt-8"><router-link to='/projects'>Projects</router-link></li>
           <li class="mr-16 mt-8"><router-link to='/blog'>Blog</router-link></li>
@@ -17,6 +20,9 @@ export default {
 <style >
     nav{
         flex: 0 0 35%;
+    }
+    .toggleMenu{
+        flex: 0 0 33.33%;
     }
 
     a {

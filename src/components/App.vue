@@ -10,8 +10,6 @@
 <script>
 import TheHeader from './layout/TheHeader.vue';
 
-
-
 export default {
   name: 'App',
   components:{
@@ -35,7 +33,7 @@ export default {
   text-align: center;
   overflow-x: hidden;
   background-image: url('../../public/assets/images/BG.jpg');
-  background-color: red;
+  position: relative;
 }
 
 
