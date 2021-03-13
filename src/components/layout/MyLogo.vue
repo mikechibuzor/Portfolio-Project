@@ -1,5 +1,5 @@
 <template>
-    <div class="container order-2 xl:order-1  flex justify-center xl:justify-start  px-3 xl:px-8">
+    <div class="container order-2 xl:order-1  flex justify-center xl:justify-start  px-3 xl:px-16">
       <div class="logo   h-12 w-12">
       
         <svg class="h-full w-full  justify-center xl:mt-6" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">

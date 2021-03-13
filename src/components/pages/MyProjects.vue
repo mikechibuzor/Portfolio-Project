@@ -1,6 +1,6 @@
 <template>
-  <div class="container h-auto px-8 py-8 grid grid-cols-2">
-    <div class="first col-span-1">
+  <div class="container h-auto px-6 xl:px-16 py-8 grid grid-cols-2">
+    <div class="first col-span-2 xl:col-span-1">
       <h1 class="text-3xl font-bold">My Projects</h1>
       <filter-projects class="mb-8"></filter-projects>  
       <single-project v-for="singleProject in projects" :key="singleProject.id" :parameters="singleProject">

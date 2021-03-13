@@ -1,5 +1,5 @@
 <template>
-  <div class="container shadow rounded bg-white px-4 py-2 ">
+  <div class="container shadow rounded text-justify bg-white px-4 py-2 mt-8 flex ">
       <main>
           <h3 class="font-bold">{{ parameters.nameOfProject }}</h3>
           <p class="text-gray-700">{{ parameters.aboutProject }}</p>
@@ -18,6 +18,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+    main{
+        flex: 0 0 80%;
+    }
 
+    aside{
+        flex: 0 0 20%;
+    }
 </style>
