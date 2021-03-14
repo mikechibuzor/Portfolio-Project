@@ -1,13 +1,13 @@
 <template>
-  <div class="container h-auto px-6 xl:px-16 py-8 grid grid-cols-2">
+  <div class="container h-auto px-6 xl:px-16 py-10 grid grid-cols-2">
     <div class="first col-span-2 xl:col-span-1">
-      <h1 class="text-3xl font-bold">My Projects</h1>
+      <h1 class="text-4xl font-bold">My Projects</h1>
       <filter-projects class="mb-8"></filter-projects>  
       <single-project v-for="singleProject in projects" :key="singleProject.id" :parameters="singleProject">
       </single-project>    
     </div>
     <div class="second">
-
+     
     </div>
   </div>
 </template>
@@ -30,6 +30,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  .profile-photo{
+    border-radius: 50%;
+  }
 
 </style>
