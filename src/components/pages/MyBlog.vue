@@ -8,7 +8,9 @@
     </div>
     <div class="second hidden  col-span-2 xl:col-span-1  xl:flex flex-col items-center xl:items-end xl:pr-10 justify-center">
       <div class="profile-card bg-white border shadow-sm px-16 py-8 flex items-center justify-center flex-col rounded-md">
-      <div class="profile-photo border "></div>
+      <div class="profile-photo border ">
+        <img src="../../../public/assets/images/Rectangle.png" alt="Ayuk's Photo">
+      </div>
       <h2 class="text-xl font-bold mt-4">Paul Ayuk</h2>
       <p class="text-gray-600 font-bold">Software Developer</p>
       <div class="sm-icons mt-6 flex items-center justify-center">
@@ -100,13 +102,15 @@
         <p><span class="px-2 py-1 rounded-full text-gray-600 shadow text-sm mr-2">HTML</span><span class="px-2 py-1 rounded-full text-gray-600 shadow text-sm mr-2">Wordpress</span><span class="px-2 py-1 rounded-full text-gray-600 shadow text-sm mr-2">PHP</span></p>
       </div>
     </div>
-    <div class="footer flex px-2 items-center justify-center py-2 border shadow-md fixed bottom-0 left-0 right-0 w-screen bg-white  h-height15 xl:hidden">
-      <div class="p-photo border "></div>
-      <div class="p-desc px-1  ">
-        <h2 class="font-bold">Paul Ayuk</h2>
+    <div class="footer flex  items-center justify-between pl-4 pr-6 py-2 border shadow-md fixed bottom-0 left-0 right-0 w-screen bg-white  h-height15 xl:hidden">
+      <div class="p-photo ">
+        <img class="object-contain h-full w-full" src="../../../public/assets/images/Rectangle.png" alt="Ayuk's Photo">
+      </div>
+      <div class="p-desc mb-2  ">
+        <h2 class="font-bold text-xl">Paul Ayuk</h2>
         <p class="text-xs text-gray-500">Software Developer</p>
       </div>
-       <div class="sm-icons flex items-center justify-center ">
+       <div class="sm-icons flex items-center justify-center  ">
                 <a href="#" class="mr-4">
                     <div class="icon h-5 w-5 md:h-10 md:w-10 xl:h-6 xl:w-6">
                         <svg class="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,8 +200,8 @@ export default {
   }
 
   .p-photo{
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
     border-radius: 50%;
   }
 
@@ -211,6 +215,11 @@ export default {
 
   .footer .p-photo{
     flex: 0 0 20%;
+  }
+
+  .footer .p-desc{
+    flex: 0 0 45%;
+   
   }
 
   .footer .sm-icons{
