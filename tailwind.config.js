@@ -9,6 +9,7 @@ module.exports = {
       },
       height: {
         height10: "10vh",
+        height15: "15vh",
         height20: "20vh",
         height30: "30vh",
         height40: "40vh",

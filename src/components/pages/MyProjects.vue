@@ -3,7 +3,7 @@
     <div class="first col-span-2 xl:col-span-1">
       <h1 class="text-4xl font-bold">My Projects</h1>
       <filter-projects class="mb-8"></filter-projects>  
-      <single-project v-for="singleProject in projects" :key="singleProject.id" :parameters="singleProject">
+      <single-project v-for="singleProject in projects" :key="singleProject.id" :parameters="singleProject" :id="singleProject.id">
       </single-project>    
     </div>
     <div class="second">
