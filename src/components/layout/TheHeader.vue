@@ -1,5 +1,5 @@
 <template>
-  <header class="h-16 xl:h-20 flex items-center shadow-md xl:shadow-none bg-white xl:bg-transparent">
+  <header class="  dark:text-white  h-16 xl:h-20 flex items-center shadow-md xl:shadow-none bg-white xl:bg-transparent">
     <my-logo></my-logo>
     <nav-bar></nav-bar>
     <header-end></header-end>
