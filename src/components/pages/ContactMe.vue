@@ -5,11 +5,11 @@
             <form class="mt-8 w-full xl:w-4/5  " action="#">
                 <div class="form-element flex flex-col mb-10 ">
                     <label class="text-gray-600 text-lg" for="fullname">Fullname</label>
-                    <input class="outline-none border-b py-2  bg-transparent" type="text" id="fullname" placeholder="Iwuagwu Chibuzor Michael" />
+                    <input class="outline-none border-b py-2  bg-transparent" type="text" id="fullname" placeholder="full name" />
                 </div>
                 <div class="form-element flex flex-col mb-10">
                     <label class="text-gray-600 text-lg" for="email">Email address</label>
-                    <input class="outline-none border-b py-2 bg-transparent" type="email" id="email" placeholder="iwuagwuchibuzor@gmail.com" />
+                    <input class="outline-none border-b py-2 bg-transparent" type="email" id="email" placeholder="email" />
                 </div>
                 <div class="form-element">
                     <textarea class="w-full outline-none bg-transparent border-b" rows="5" placeholder="Say something to me">
@@ -95,7 +95,7 @@
             </div>
             <div>
                 <p>You can also say hi to me here</p>
-                <a class="underline font-bold" href="mailto:iwuagwuchibuzor@gmail.com">iwuagwuchibuzor@gmail.com</a>
+                <a class="underline font-bold" href="mailto:iwuagwuchibuzor@gmail.com">kolumide22@gmail.com</a>
             </div>
         </div>
     </div>
