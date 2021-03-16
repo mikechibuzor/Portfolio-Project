@@ -1,7 +1,7 @@
 <template>
   <button @click="toggleTheme" class=" absolute xl:static no outline-none border-transparent  ">
       <div class="h-3 w-8 outline-none rounded-md mt-8 bg-text-color transition duration-500 ease-in dark:bg-gray-400" :class="buttonB">
-              <p ref='btn' class="tnn w-2/4 h-full rounded-md bg-white"></p>
+              <p ref='btn' class="btn w-2/4 h-full rounded-md bg-white"></p>
       </div>
   </button>
 </template>
