@@ -11,8 +11,8 @@
       <div class="profile-photo border ">
         <img src="../../../public/assets/images/Rectangle.png" alt="Ayuk's Photo">
       </div>
-      <h2 class="text-xl font-bold mt-4">Paul Ayuk</h2>
-      <p class="text-gray-600 font-bold">Software Developer</p>
+      <h2 class="text-xl font-bold mt-4">Olumide Okewale</h2>
+      <p class="text-gray-600 font-bold">Software Engineer</p>
       <div class="sm-icons mt-6 flex items-center justify-center">
                 <a href="#" class="mr-4">
                     <div class="icon h-5 w-5 md:h-10 md:w-10 xl:h-6 xl:w-6">
@@ -104,10 +104,10 @@
     </div>
     <div class="footer flex  items-center justify-between pl-4 pr-6 py-2 border shadow-md fixed bottom-0 left-0 right-0 w-screen bg-white  h-height15 xl:hidden">
       <div class="p-photo ">
-        <img class="object-contain h-full w-full" src="../../../public/assets/images/Rectangle.png" alt="Ayuk's Photo">
+        <img class="object-contain h-full w-full" src="../../../public/assets/images/olumide.jpg" alt="olumide-okewale">
       </div>
       <div class="p-desc mb-2  ">
-        <h2 class="font-bold text-xl">Paul Ayuk</h2>
+        <h2 class="font-bold text-xl">Olumide Okewale</h2>
         <p class="text-xs text-gray-500">Software Developer</p>
       </div>
        <div class="sm-icons flex items-center justify-center  ">
@@ -183,14 +183,18 @@
 import { mapGetters } from 'vuex';
 import BlogPost from '../layout/BlogPost.vue';
 export default {
+
   components:{
     BlogPost,
   },
+
   computed:{
     ...mapGetters({ blogs: 'getBlog' })
   }
+
 }
 </script>
+
 
 <style scoped>
     .profile-photo{

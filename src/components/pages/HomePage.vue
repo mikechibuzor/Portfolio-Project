@@ -2,7 +2,7 @@
   <div class="container  grid grid-cols-1 xl:grid-cols-2 h-height100 xl:h-height80 items-center justify-center px-6 xl:pl-32 xl:pr-16 ">
     <div class="first col-span-1 flex items-center justify-center xl:items-start xl:justify-start relative">
       <div class="profile-image h-height30 xl:h-height60 w-full   xl:w-3/5  ">
-        <img src="../../../public/assets/images/Rectangle.png" alt="">
+        <img src="../../../public/assets/images/Rectangle.png" alt="olumide-okewale">
       </div>
       <div class="smedia-icons absolute -bottom-16 md:-bottom-28 xl:-bottom-16 flex items-center justify-between  px-20 md:flex   md:px-32 w-full md:w-full xl:w-4/5">
         <a href="#">
@@ -72,8 +72,8 @@
     </div>
     <div class="second col-span-1 ">
       <div class="text md:-mt-36 xl:mt-o">
-        <h1 class="text-2xl text-center xl:text-left md:text-4xl xl:text-3xl font-bold mb-2">Hello, I'm Paul Ayuk</h1>
-        <h3 class="text-lg text-center xl:text-left xl:text-xl font-bold text-gray-700 mb-3">Software Developer and Technical Writer.</h3>
+        <h1 class="text-2xl text-center xl:text-left md:text-4xl xl:text-3xl font-bold mb-2">Hello, I'm Olumide Okewale</h1>
+        <h3 class="text-lg text-center xl:text-left xl:text-xl font-bold text-gray-700 mb-3">Software and DevOps Engineer</h3>
         <p class="text-center xl:text-justify leading-relaxed text-sm text-gray-500 ">I started out as a freelance graphics designer before moving into web then fully into UX design. My first 
           was as a PHP web developer. My primary responsiblity was to design and code web pages.
         </p>

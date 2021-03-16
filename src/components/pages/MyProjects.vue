@@ -18,7 +18,6 @@ import { mapGetters } from 'vuex';
 import FilterProjects from '../utilities/FilterProject.vue';
 import SingleProject from '../layout/SingleProject.vue';
 
-
 export default {
   components:{
     FilterProjects,
@@ -28,6 +27,7 @@ export default {
     ...mapGetters({ projects: 'getProjects'})
   }
 }
+
 </script>
 
 <style scoped>
