@@ -8,7 +8,9 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import TheHeader from './layout/TheHeader.vue';
+
 
 export default {
   name: 'App',
@@ -19,9 +21,22 @@ export default {
       return {
         publicPath: process.env.BASE_URL,
       }
-    }
-
+    },
+    computed: {
+    ...mapGetters({ theme: "getTheme" }),
+  },
+    watch: {
+      theme(newTheme) {
+        newTheme === "light"
+          ? document.querySelector("html").classList.remove("dark")
+          : document.querySelector("html").classList.add("dark");
+      },
+    },
+     beforeMount() {
+    this.$store.dispatch("initTheme");
+  }
 }
+
 </script>
 
 <style>
@@ -32,7 +47,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
   overflow-x: hidden;
-  background-image: url('../../public/assets/images/BG.jpg');
+  /* background-image: url('../../public/assets/images/BG.jpg'); */
   background-repeat: no-repeat;
   position: relative;
 }

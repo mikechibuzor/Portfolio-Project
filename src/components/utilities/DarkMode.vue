@@ -1,8 +1,8 @@
 <template>
-  <button class=" absolute xl:static  ">
-      <div class="h-3 w-8 rounded-md mt-8 bg-blue-600">
+  <button @click="toggleTheme" class=" absolute xl:static no outline-none border-transparent  ">
+      <div class="h-3 w-8 outline-none rounded-md mt-8 bg-gray-400" :class="buttonB">
          
-              <p class="btn w-2/4 h-full rounded-md bg-white"></p>
+              <p ref='btn' class=" w-2/4 h-full rounded-md bg-white"></p>
           
       </div>
   </button>
@@ -10,7 +10,33 @@
 
 <script>
 export default {
+  data(){
+    return{
+      addBtn: false,
+      buttonBody: false,
+    }
+  },
+ methods: {
+    toggleTheme() {
+      this.$store.dispatch("toggleTheme");
+      this.buttonBody= true;
 
+      if(this.$refs.btn.classList.contains('btn')){
+        this.$refs.btn.classList.remove('btn');
+        this.$refs.btn.classList.add('btnn')
+      }
+      else{
+        this.$refs.btn.classList.remove('btnn');
+        this.$refs.btn.classList.add('btn');
+        
+      }
+    },
+  },
+  computed:{
+    buttonB(){
+      return { buttonBody: 'bg-blue-600'}
+    }
+  }
 }
 </script>
 
@@ -19,9 +45,20 @@ export default {
     animation:  btnSlide .3s linear forwards;
   }
 
+  .btnn{
+    animation: btnSlide2 .3s linear forwards;
+  }
+
   @keyframes btnSlide{
       100%{
           transform: translateX(100%);
+      }
+  }
+
+  
+  @keyframes btnSlide2{
+      100%{
+          transform: translateX(0%);
       }
   }
 

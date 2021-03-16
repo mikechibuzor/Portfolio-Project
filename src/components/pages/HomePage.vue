@@ -1,5 +1,5 @@
 <template>
-  <div class="container grid grid-cols-1 xl:grid-cols-2 h-height100 xl:h-height80 items-center justify-center px-6 xl:pl-32 xl:pr-16 ">
+  <div class="container  grid grid-cols-1 xl:grid-cols-2 h-height100 xl:h-height80 items-center justify-center px-6 xl:pl-32 xl:pr-16 ">
     <div class="first col-span-1 flex items-center justify-center xl:items-start xl:justify-start relative">
       <div class="profile-image h-height30 xl:h-height60 w-full   xl:w-3/5  ">
         <img src="../../../public/assets/images/Rectangle.png" alt="">
