@@ -93,9 +93,9 @@
                 </div>
                 </a>
             </div>
-            <div>
+            <div class="">
                 <p>You can also say hi to me here</p>
-                <a class="underline font-bold" href="mailto:iwuagwuchibuzor@gmail.com">kolumide22@gmail.com</a>
+                <a class="underline font-bold ml-4" href="mailto:iwuagwuchibuzor@gmail.com">kolumide22@gmail.com</a>
             </div>
         </div>
     </div>

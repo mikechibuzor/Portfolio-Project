@@ -1,7 +1,7 @@
 <template>
   <div class="container  grid grid-cols-1 xl:grid-cols-2 h-height100 xl:h-height80 items-center justify-center px-6 xl:pl-32 xl:pr-16 ">
     <div class="first col-span-1 flex items-center justify-center xl:items-start xl:justify-start relative">
-      <div class="profile-image  object-contain h-height30 xl:h-height60 w-full  overflow-hidden   xl:w-3/5  ">
+      <div class="profile-image border-2 dark:shadow-lg dark:border-yellow-500  object-contain h-height30 xl:h-height60 w-full  overflow-hidden   xl:w-3/5  ">
         <img class="h-full w-full" src="../../../public/assets/images/Rectangle.png" alt="olumide-okewale">
       </div>
       <div class="smedia-icons absolute -bottom-16 md:-bottom-28 xl:-bottom-16 flex items-center justify-between  px-20 md:flex   md:px-32 w-full md:w-full xl:w-4/5">
@@ -73,14 +73,14 @@
     <div class="second col-span-1 ">
       <div class="text md:-mt-36 xl:mt-o">
         <h1 class="text-2xl text-center xl:text-left md:text-4xl xl:text-3xl font-bold mb-2">Hello, I'm Olumide Okewale</h1>
-        <h3 class="text-lg text-center xl:text-left xl:text-xl font-bold text-gray-700 mb-3">Software and DevOps Engineer</h3>
-        <p class="text-center xl:text-justify leading-relaxed text-sm text-gray-500 ">I started out as a freelance graphics designer before moving into web then fully into UX design. My first 
+        <h3 class="text-lg text-center xl:text-left xl:text-xl font-bold dark:text-yellow-400 text-gray-700 mb-3">Software and DevOps Engineer</h3>
+        <p class="text-center xl:text-justify leading-relaxed text-sm dark:text-yellow-50 text-gray-500 ">I started out as a freelance graphics designer before moving into web then fully into UX design. My first 
           was as a PHP web developer. My primary responsiblity was to design and code web pages.
         </p>
-        <p class="text-gray-500 mt-4 mb-8 xl:mb-0 text-center xl:text-left">I code in</p>
+        <p class="text-gray-500 dark:text-yellow-400 mt-4 mb-8 xl:mb-0 text-center xl:text-left">I code in</p>
         <div class="techStack mt-4 grid grid-cols-5 w-full justify-center xl:justify-start  px-6 xl:px-0 xl:w-3/5 ">
           <div class="icon h-8 w-8">            
-            <svg class="w-full h-full" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-full dark:fill  h-full" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.3934 24.848L12.444 25.5547L13.1507 20.6053L25.8787 7.87733C26.4413 7.31471 27.2044 6.99864 28 6.99864C28.7957 6.99864 29.5588 7.31471 30.1214 7.87733C30.684 8.43994 31 9.20301 31 9.99866C31 10.7943 30.684 11.5574 30.1214 12.12L17.3934 24.848Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M16 0.998672H8C7.44772 0.998672 7 1.44639 7 1.99867V3.99867C7 4.55096 7.44772 4.99867 8 4.99867H16C16.5523 4.99867 17 4.55096 17 3.99867V1.99867C17 1.44639 16.5523 0.998672 16 0.998672Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M17 2.99867H21C21.5304 2.99867 22.0391 3.20939 22.4142 3.58446C22.7893 3.95953 23 4.46824 23 4.99867" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -91,7 +91,7 @@
           </div>
           <div class="icon h-8 w-8">
             
-            <svg class="w-full h-full" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-full dark:fill h-full" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M27.9987 3H3.99866C2.89409 3 1.99866 3.89543 1.99866 5V27C1.99866 28.1046 2.89409 29 3.99866 29H27.9987C29.1032 29 29.9987 28.1046 29.9987 27V5C29.9987 3.89543 29.1032 3 27.9987 3Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M1.99866 9H29.9987" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M12.9987 13H6.99866C6.44637 13 5.99866 13.4477 5.99866 14V20C5.99866 20.5523 6.44637 21 6.99866 21H12.9987C13.5509 21 13.9987 20.5523 13.9987 20V14C13.9987 13.4477 13.5509 13 12.9987 13Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -174,6 +174,10 @@ export default {
 
   .smedia-icons a:hover svg path{
     fill: #000;
+  }
+
+  html.dark .smedia-icons a svg path{
+    fill: #FBBF24;
   }
 
   @media screen and (max-width: 768px){

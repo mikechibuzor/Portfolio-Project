@@ -11,15 +11,15 @@
     </div>
     <nav ref="nav" class="w-full xl:block ">
           <ul  class=" hidden   xl:bg-transparent static xl:flex flex-col xl:flex-row xl:w-full justify-start  ">
-            <li class="mr-16 xl:mt-8 dark:text-white text-gray-500"><router-link to='/home'>Home</router-link></li>
-            <li class="mr-16 xl:mt-8 dark:text-white text-gray-500"><router-link to='/projects'>Projects</router-link></li>
-            <li class="mr-16 xl:mt-8 dark:text-white text-gray-500"><router-link to='/blog'>Blog</router-link></li>
+            <li class="mr-16 xl:mt-8  text-gray-500"><router-link to='/home'>Home</router-link></li>
+            <li class="mr-16 xl:mt-8  text-gray-500"><router-link to='/projects'>Projects</router-link></li>
+            <li class="mr-16 xl:mt-8  text-gray-500"><router-link to='/blog'>Blog</router-link></li>
         </ul>
        <transition name="nav-list">
         <ul v-show="showNav" class="absolute xl:hidden resp left-0 shadow xl:shadow-none  dark:bg-green-500 rounded bg-gray-300 xl:bg-transparent xl:static flex flex-col xl:flex-row xl:w-full justify-start  ">
-            <li class="mr-16 mb-4 dark:text-white"><router-link to='/home'>Home</router-link></li>
-            <li class="mr-16 mb-4 dark:text-white"><router-link to='/projects'>Projects</router-link></li>
-            <li class="mr-16 dark:text-white"><router-link to='/blog'>Blog</router-link></li>
+            <li class="mr-16 mb-4 "><router-link to='/home'>Home</router-link></li>
+            <li class="mr-16 mb-4 "><router-link to='/projects'>Projects</router-link></li>
+            <li class="mr-16 "><router-link to='/blog'>Blog</router-link></li>
         </ul>
        </transition>
     </nav>
@@ -54,6 +54,10 @@ export default {
         position: relative;
     }
 
+    html.dark a{
+        color: rgb(151, 146, 146);
+    }
+
     a::before {
     position: absolute;
     content: "";
@@ -62,29 +66,39 @@ export default {
     width: 0%;
     transition: all 0.3s linear;
     bottom: -2px;
+
     }
 
     a:hover::before {
-    left: 0;
-    width: 100%;
+        left: 0;
+        width: 100%;
     }
-    
-    /* nav  a {
-        color: #999999;
-    } */
 
     nav  a:hover {
         color: black;
     }
 
-    nav  a.router-link-active::before {
+     html.dark nav  a.router-link-active::before {
         width: 100%;
+        background: #FBBF24;
+    }
+     nav  a.router-link-active::before {
+        width: 100%;
+        background: #000;
     }
 
     nav  a.router-link-active {
         color: #000;
+            
         font-weight: bold;
     }
+
+    html.dark nav  a.router-link-active {
+        color: #FFF;
+        font-weight: bold;
+    }
+
+
 
     nav  a::before {
         background: #000;
@@ -97,7 +111,6 @@ export default {
         z-index: 30;
     }
   
-
     .nav-list-enter-active{
         animation: enterSlideBar .3s linear forwards;
     }

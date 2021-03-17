@@ -2,7 +2,7 @@
   <div class="cont cont px-8 xl:px-16 py-10 grid  grid-cols-2">
     <div class="first col-span-2 xl:col-span-1 w-full">
       <div class="head">
-        <h1 class="text-4xl font-bold mb-8">My Opinions</h1>
+        <h1 class="text-4xl font-bold mb-8 dark:text-green-400 ">My Opinions</h1>
         <blog-post v-for="blog in blogs" :key="blog.id" :blog="blog"></blog-post>
       </div>
     </div>
