@@ -1,9 +1,9 @@
 <template>
-  <div class="container shadow rounded text-justify bg-white px-4 py-2 mt-8 flex  ">
+  <div class="container shadow rounded text-justify bg-white dark:bg-gray-100 px-4 py-2 mt-8 flex  ">
       <main>
-          <h3 class="font-bold">{{ parameters.nameOfProject }}</h3>
+          <h3 class="font-bold dark:text-text-color">{{ parameters.nameOfProject }}</h3>
           <p class="text-gray-700 h-height10 overflow-hidden">{{ parameters.aboutProject }}</p>
-            <button @click="showMore" class="text-sm bg-black px-4 py-1 text-white shadow rounded mt-2">More</button>
+            <button @click="showMore" class="text-sm dark:bg-blue-500 bg-gray-700 px-4 py-1 text-white shadow rounded mt-2">More</button>
       </main>
       <aside class="tech-stack">
           <span v-for="techStack in parameters.techStacks" :key="techStack.name">

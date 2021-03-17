@@ -1,5 +1,5 @@
 <template>
-  <header class="  dark:text-white  h-16 xl:h-20 flex items-center shadow-md xl:shadow-none bg-white xl:bg-transparent">
+  <header :class="compFixedHeader" class=" w-full   dark:text-white duration-300 transition-all ease-linear h-16 xl:h-20 flex items-center shadow-md xl:shadow-none  xl:bg-transparent">
     <my-logo></my-logo>
     <nav-bar></nav-bar>
     <header-end></header-end>
@@ -14,15 +14,65 @@ import HeaderEnd from './HeaderEnd.vue';
 
 export default {
     name: 'TheHeader',
+    data(){
+      return{
+        fixedHeader: false,
+      }
+    },
     components:{
         NavBar,
         MyLogo,
         HeaderEnd
+    },
+    methods:{
+      checkDocumentObject(){
+            const docScrollTop = document.documentElement.scrollTop;
+           
+            if(docScrollTop > 100){
+                this.fixedHeader = true;
+            }
+            else{
+                this.fixedHeader = false;
+            }
+        },
+
+    },
+    computed:{
+      compFixedHeader(){
+            return { 
+              fixed: this.fixedHeader,
+              'dark:bg-gray-900': this.fixedHeader,
+               }
+        }
+    },
+     mounted(){
+        window.addEventListener('scroll', this.checkDocumentObject);
     }
 
 }
 </script>
 
-<style>
+<style scoped>
+   header.fixed{
+        z-index: 131;
+        position: fixed;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+        animation: fixHeader .5s ease;
+        
+    }
+
+
+
+    @keyframes fixHeader{
+        0%{
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
 
 </style>
