@@ -180,7 +180,7 @@ export default {
     fill: #FBBF24;
   }
   html.dark .profile-image{
-    border: 1px solid #eee;
+    border: 1px solid #FBBF24;
   }
   html.dark .techStack svg path{
     fill: #FBBF24;
