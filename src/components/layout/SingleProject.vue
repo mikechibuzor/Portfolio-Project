@@ -1,8 +1,8 @@
 <template>
-  <div class="container shadow rounded text-justify bg-white dark:bg-yellow-100 px-4 py-2 mt-8 flex  ">
+  <div class="container shadow rounded text-justify bg-white dark:bg-yellow-200 px-4 py-2 mt-8 flex  ">
       <main>
-          <h3 class="font-bold dark:text-gray-700">{{ parameters.nameOfProject }}</h3>
-          <p class="text-gray-700  h-height10 overflow-hidden">{{ parameters.aboutProject }}</p>
+          <h3 class="font-bold dark:text-gray-900">{{ parameters.nameOfProject }}</h3>
+          <p class="text-gray-900  h-height10 overflow-hidden">{{ parameters.aboutProject }}</p>
             <button @click="showMore" class="text-sm dark:bg-gray-500 bg-gray-700 px-4 py-1 text-white shadow rounded mt-2">More</button>
       </main>
       <aside class="tech-stack">

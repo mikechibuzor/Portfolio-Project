@@ -7,12 +7,12 @@
       </div>
     </div>
     <div class="second hidden  col-span-2 xl:col-span-1  xl:flex flex-col items-center xl:items-end xl:pr-10 justify-center">
-      <div class="profile-card bg-white dark:bg-yellow-100 border shadow-sm px-16 py-8 flex items-center justify-center flex-col rounded-md">
+      <div class="profile-card bg-white dark:bg-yellow-200  border shadow-sm px-16 py-8 flex items-center justify-center flex-col rounded-md">
       <div class="profile-photo border overflow-hidden ">
         <img class="w-full h-full object-cover" src="../../../public/assets/images/olumide.jpg" alt="Ayuk's Photo">
       </div>
-      <h2 class="text-xl dark:text-gray-800 font-bold mt-4">Olumide Okewale</h2>
-      <p class="text-gray-600 font-bold">Software Engineer</p>
+      <h2 class="text-xl dark:text-gray-900 font-bold mt-4">Olumide Okewale</h2>
+      <p class="text-gray-800 font-bold">Software Engineer</p>
       <div class="sm-icons mt-6 flex items-center justify-center">
                 <a href="#" class="mr-4">
                     <div class="icon h-5 w-5 md:h-10 md:w-10 xl:h-6 xl:w-6">
@@ -79,7 +79,7 @@
                 </a>
       </div>
       </div>
-      <div class="news-letter border shadow-sm px-5 py-4 mt-8 dark:bg-yellow-100 bg-white rounded  ">
+      <div class="news-letter border shadow-sm px-5 py-4 mt-8 dark:bg-yellow-200 bg-white rounded  ">
         <p class="text-lg font-bold dark:text-gray-700">Subscribe to our newsletter</p>
         <i class="text-sm font-medium dark:text-gray-700">I am not going to spam you, i promise</i>
 
@@ -99,19 +99,19 @@
       </div>
       <div class="tags flex flex-col  mr-24 mt-8  items-start">
         <p class="text-gray-400 mb-4">Tags</p>
-        <p><span class="px-2 py-1 rounded-full dark:bg-yellow-200 dark:text-gray-800 text-gray-600 shadow text-sm mr-2">HTML</span><span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-800 text-sm mr-2">Wordpress</span><span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-800 text-sm mr-2">PHP</span></p>
+        <p><span class="px-2 py-1 rounded-full dark:bg-yellow-200 dark:text-gray-900 font-bold text-gray-600 shadow text-sm mr-2">HTML</span><span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">Wordpress</span><span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">PHP</span></p>
       </div>
     </div>
     <!-- Purposely left this here for empty mark up -->
     <div class="xl:hidden mt-4 h-height10 w-full col-span-2">
     
     </div>
-    <div class="footer dark:bg-gray-900 transition duration-300 ease-linear flex  items-center justify-between pl-4 pr-8 py-2  shadow-md fixed bottom-0 left-0 right-0 w-screen bg-white  h-height15 xl:hidden">
-      <div class="p-photo ">
-        <img class="object-contain h-full w-full" src="../../../public/assets/images/olumide.jpg" alt="olumide-okewale">
+    <div class="footer overflow-hidden  dark:bg-gray-900 transition duration-300 ease-linear flex  items-center justify-between  shadow-md fixed bottom-0 left-0 right-0 w-screen bg-white pl-2 h-height10 xl:hidden">
+      <div class="p-photo overflow-hidden ">
+        <img class="object-fill h-full w-full" src="../../../public/assets/images/olumide.jpg" alt="olumide-okewale">
       </div>
-      <div class="p-desc mb-2   ">
-        <h2 class="font-bold text-lg">Olumide Okewale</h2>
+      <div class="p-desc    ">
+        <h2 class="font-bold text-sm">Olumide Okewale</h2>
         <p class="text-xs text-gray-500">Software Developer</p>
       </div>
        <div class="sm-icons flex items-center justify-center ">
@@ -205,10 +205,11 @@ export default {
       height: 7rem;
       width: 7rem;
       border-radius: 50%;
+      overflow: hidden;
   }
 
   .p-photo{
-    height: 3.5rem;
+    height: 4rem;
     width: 3.5rem;
     border-radius: 50%;
   }
@@ -226,12 +227,18 @@ export default {
   }
 
   .footer .p-desc{
-    flex: 0 0 45%;
+    flex: 0 0 35%;
+   
+    padding-left: .5rem;
    
   }
 
   .footer .sm-icons{
-    flex: 0 0 30%;
+    flex: 0 0 45%;
     
+  }
+
+  html.dark .profile-card, .news-letter{
+    border:  none;
   }
 </style>
