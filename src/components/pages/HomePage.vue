@@ -1,7 +1,7 @@
 <template>
   <div class="container  grid grid-cols-1 xl:grid-cols-2 h-height100 xl:h-height80 items-center justify-center px-6 xl:pl-32 xl:pr-16 ">
     <div class="first col-span-1 flex items-center justify-center xl:items-start xl:justify-start relative">
-      <div class="profile-image border-2 dark:shadow-lg dark:border-yellow-500  object-contain h-height30 xl:h-height60 w-full  overflow-hidden   xl:w-3/5  ">
+      <div class="profile-image dark:shadow-lg dark:border-yellow-500  object-contain h-height30 xl:h-height60 w-full  overflow-hidden   xl:w-3/5  ">
         <img class="h-full w-full" src="../../../public/assets/images/olumide.jpg" alt="olumide-okewale">
       </div>
       <div class="smedia-icons absolute -bottom-16 md:-bottom-28 xl:-bottom-16 flex items-center justify-between  px-20 md:flex   md:px-32 w-full md:w-full xl:w-4/5">
@@ -179,7 +179,9 @@ export default {
   html.dark .smedia-icons a svg path{
     fill: #FBBF24;
   }
-
+  html.dark .profile-image{
+    border: 1px solid #eee;
+  }
   html.dark .techStack svg path{
     fill: #FBBF24;
     /* stroke: rgba(107, 114, 128, var(--tw-text-opacity)); */
