@@ -180,11 +180,10 @@ export default {
     fill: #FBBF24;
   }
   html.dark .profile-image{
-    border: 1px solid #FBBF24;
+    border: 3px solid #FBBF24;
   }
   html.dark .techStack svg path{
     fill: #FBBF24;
-    /* stroke: rgba(107, 114, 128, var(--tw-text-opacity)); */
   }
 
   @media screen and (max-width: 768px){
