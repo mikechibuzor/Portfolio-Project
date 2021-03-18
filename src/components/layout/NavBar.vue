@@ -78,6 +78,10 @@ export default {
         color: black;
     }
 
+    html.dark a:hover{
+        color: #FBBF24;
+    }
+
      html.dark nav  a.router-link-active::before {
         width: 100%;
         background: #FBBF24;
@@ -85,6 +89,10 @@ export default {
      nav  a.router-link-active::before {
         width: 100%;
         background: #000;
+    }
+
+    html.dark nav a:hover::before{
+        background: #FBBF24;
     }
 
     nav  a.router-link-active {

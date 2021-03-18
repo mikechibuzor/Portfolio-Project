@@ -2,7 +2,8 @@
     <div class="container order-2 xl:order-1  flex justify-center xl:justify-start  px-3 xl:px-16">
       <div class="logo   h-12 w-12">
       
-        <svg class="h-full w-full  justify-center xl:mt-6" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <router-link to='/home'>
+          <svg class="h-full w-full  justify-center xl:mt-6" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_d)">
             <circle cx="40.5" cy="38.5" r="38.5" fill="white"/>
             <circle cx="40.5" cy="38.5" r="38" stroke="#DADADA"/>
@@ -21,6 +22,7 @@
             </filter>
             </defs>
         </svg>
+        </router-link>
 
       </div>
     </div>

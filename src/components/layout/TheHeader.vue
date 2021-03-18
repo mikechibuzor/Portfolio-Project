@@ -1,5 +1,5 @@
 <template>
-  <header :class="compFixedHeader" class=" w-full bg-gray-800  dark:text-white duration-300 transition-all ease-linear h-16 xl:h-20 flex items-center shadow-md xl:shadow-none  xl:bg-transparent">
+  <header :class="compFixedHeader" class=" w-full   dark:text-white duration-300 transition-all ease-linear h-16 xl:h-20 flex items-center shadow-md xl:shadow-none  xl:bg-transparent">
     <my-logo></my-logo>
     <nav-bar></nav-bar>
     <header-end></header-end>
@@ -57,9 +57,9 @@ export default {
         z-index: 131;
         position: fixed;
         box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
-        animation: fixHeader .5s ease;
+        animation: fixHeader .3s ease;
         background: #fff;        
-        
+        transition: transform;        
     }
 
     html.dark header.fixed{
@@ -67,6 +67,7 @@ export default {
        /* background-color: rgba(17, 4, 39, var(--tw-bg-opacity)); */
     }
 
+ 
 
 
     @keyframes fixHeader{

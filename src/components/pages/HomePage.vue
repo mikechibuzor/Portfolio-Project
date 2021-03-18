@@ -80,7 +80,7 @@
         <p class="text-gray-500 dark:text-yellow-400 mt-4 mb-8 xl:mb-0 text-center xl:text-left">I code in</p>
         <div class="techStack mt-4 grid grid-cols-5 w-full justify-center xl:justify-start  px-6 xl:px-0 xl:w-3/5 ">
           <div class="icon h-8 w-8">            
-            <svg class="w-full dark:fill  h-full" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-full  h-full" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.3934 24.848L12.444 25.5547L13.1507 20.6053L25.8787 7.87733C26.4413 7.31471 27.2044 6.99864 28 6.99864C28.7957 6.99864 29.5588 7.31471 30.1214 7.87733C30.684 8.43994 31 9.20301 31 9.99866C31 10.7943 30.684 11.5574 30.1214 12.12L17.3934 24.848Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M16 0.998672H8C7.44772 0.998672 7 1.44639 7 1.99867V3.99867C7 4.55096 7.44772 4.99867 8 4.99867H16C16.5523 4.99867 17 4.55096 17 3.99867V1.99867C17 1.44639 16.5523 0.998672 16 0.998672Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M17 2.99867H21C21.5304 2.99867 22.0391 3.20939 22.4142 3.58446C22.7893 3.95953 23 4.46824 23 4.99867" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -178,6 +178,11 @@ export default {
 
   html.dark .smedia-icons a svg path{
     fill: #FBBF24;
+  }
+
+  html.dark .techStack svg path{
+    fill: #FBBF24;
+    /* stroke: rgba(107, 114, 128, var(--tw-text-opacity)); */
   }
 
   @media screen and (max-width: 768px){

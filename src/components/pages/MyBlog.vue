@@ -2,14 +2,14 @@
   <div class="cont cont px-8 xl:px-16 py-10 grid  grid-cols-2">
     <div class="first col-span-2 xl:col-span-1 w-full">
       <div class="head">
-        <h1 class="text-4xl font-bold mb-8 dark:text-green-400 ">My Opinions</h1>
+        <h1 class="text-4xl font-bold mb-8  transition duration-300 ease-linear ">My Opinions</h1>
         <blog-post v-for="blog in blogs" :key="blog.id" :blog="blog"></blog-post>
       </div>
     </div>
     <div class="second hidden  col-span-2 xl:col-span-1  xl:flex flex-col items-center xl:items-end xl:pr-10 justify-center">
       <div class="profile-card bg-white border shadow-sm px-16 py-8 flex items-center justify-center flex-col rounded-md">
-      <div class="profile-photo border ">
-        <img src="../../../public/assets/images/Rectangle.png" alt="Ayuk's Photo">
+      <div class="profile-photo border overflow-hidden ">
+        <img class="w-full h-full object-cover" src="../../../public/assets/images/olumide.jpg" alt="Ayuk's Photo">
       </div>
       <h2 class="text-xl font-bold mt-4">Olumide Okewale</h2>
       <p class="text-gray-600 font-bold">Software Engineer</p>
@@ -106,7 +106,7 @@
     <div class="xl:hidden mt-4 h-height10 w-full col-span-2">
     
     </div>
-    <div class="footer dark:bg-gray-900   flex  items-center justify-between pl-4 pr-8 py-2  shadow-md fixed bottom-0 left-0 right-0 w-screen bg-white  h-height15 xl:hidden">
+    <div class="footer dark:bg-gray-900 transition duration-300 ease-linear flex  items-center justify-between pl-4 pr-8 py-2  shadow-md fixed bottom-0 left-0 right-0 w-screen bg-white  h-height15 xl:hidden">
       <div class="p-photo ">
         <img class="object-contain h-full w-full" src="../../../public/assets/images/Rectangle.png" alt="olumide-okewale">
       </div>

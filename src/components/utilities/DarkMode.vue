@@ -1,5 +1,5 @@
 <template>
-  <button @click="toggleTheme" class=" absolute xl:static no outline-none border-transparent  ">
+  <button @click="toggleTheme" class=" absolute xl:static outline-none border-none   ">
       <div class="h-3 w-8 outline-none rounded-md mt-8 bg-text-color transition duration-500 ease-in dark:bg-gray-400" :class="buttonB">
               <p ref='btn' class="btn w-2/4 h-full rounded-md bg-white"></p>
       </div>
@@ -38,6 +38,15 @@ export default {
 </script>
 
 <style scoped>
+
+  button{
+    border: none;
+    outline: none;
+  }
+  button:focus, button:active{
+    outline: none;
+    border: none;
+  }
   .btn{
     animation:  btnSlide .3s linear forwards;
   }
