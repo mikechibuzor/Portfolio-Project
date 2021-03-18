@@ -1,5 +1,5 @@
 <template>
-  <div class="container shadow rounded text-justify bg-white dark:bg-yellow-50 px-4 py-2 mt-8 flex  ">
+  <div class="container shadow rounded text-justify bg-white dark:bg-yellow-100 px-4 py-2 mt-8 flex  ">
       <main>
           <h3 class="font-bold dark:text-gray-700">{{ parameters.nameOfProject }}</h3>
           <p class="text-gray-700  h-height10 overflow-hidden">{{ parameters.aboutProject }}</p>

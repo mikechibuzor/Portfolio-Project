@@ -2,16 +2,16 @@
   <div class="cont cont px-8 xl:px-16 py-10 grid  grid-cols-2">
     <div class="first col-span-2 xl:col-span-1 w-full">
       <div class="head">
-        <h1 class="text-4xl font-bold mb-8  transition duration-300 ease-linear ">My Opinions</h1>
+        <h1 class="text-4xl font-bold mb-8  transition duration-300 ease-linear dark:text-gray-200 ">My Opinions</h1>
         <blog-post v-for="blog in blogs" :key="blog.id" :blog="blog"></blog-post>
       </div>
     </div>
     <div class="second hidden  col-span-2 xl:col-span-1  xl:flex flex-col items-center xl:items-end xl:pr-10 justify-center">
-      <div class="profile-card bg-white border shadow-sm px-16 py-8 flex items-center justify-center flex-col rounded-md">
+      <div class="profile-card bg-white dark:bg-yellow-100 border shadow-sm px-16 py-8 flex items-center justify-center flex-col rounded-md">
       <div class="profile-photo border overflow-hidden ">
         <img class="w-full h-full object-cover" src="../../../public/assets/images/olumide.jpg" alt="Ayuk's Photo">
       </div>
-      <h2 class="text-xl font-bold mt-4">Olumide Okewale</h2>
+      <h2 class="text-xl dark:text-gray-800 font-bold mt-4">Olumide Okewale</h2>
       <p class="text-gray-600 font-bold">Software Engineer</p>
       <div class="sm-icons mt-6 flex items-center justify-center">
                 <a href="#" class="mr-4">
@@ -79,14 +79,14 @@
                 </a>
       </div>
       </div>
-      <div class="news-letter border shadow-sm px-5 py-4 mt-8 bg-white rounded  ">
-        <p class="text-lg font-bold">Subscribe to our newsletter</p>
-        <i class="text-sm font-medium">I am not going to spam you, i promise</i>
+      <div class="news-letter border shadow-sm px-5 py-4 mt-8 dark:bg-yellow-100 bg-white rounded  ">
+        <p class="text-lg font-bold dark:text-gray-700">Subscribe to our newsletter</p>
+        <i class="text-sm font-medium dark:text-gray-700">I am not going to spam you, i promise</i>
 
         <form action="#" class="mt-8">
          <div class="form-element flex border-b pb-2">
-            <input type="email" name="email" class="outline-none mr-2 w-full" placeholder="Enter you email address" />
-            <button type="submit" class="bg-text-color hover:bg-black transition duration-150 h-6 w-12 flex items-center justify-center px-4 py-2  rounded-full">
+            <input type="email" name="email" class="outline-none mr-2 w-full dark:bg-yellow-50" placeholder="Enter you email address" />
+            <button type="submit" class="bg-text-color dark:bg-yellow-600 hover:bg-black transition duration-150 h-6 w-12 flex items-center justify-center px-4 py-2  rounded-full">
                 <span class="flex items-center justify-center" >
                     <svg class="h-full flex items-center w-4 ml-2 transform -rotate-90 transition duration-150  " viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M22.5303 6.53033C22.8232 6.23744 22.8232 5.76257 22.5303 5.46967L17.7574 0.696701C17.4645 0.403807 16.9896 0.403807 16.6967 0.696701C16.4038 0.989594 16.4038 1.46447 16.6967 1.75736L20.9393 6L16.6967 10.2426C16.4038 10.5355 16.4038 11.0104 16.6967 11.3033C16.9896 11.5962 17.4645 11.5962 17.7574 11.3033L22.5303 6.53033ZM-6.55671e-08 6.75L22 6.75L22 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z" fill="white"/>
@@ -99,7 +99,7 @@
       </div>
       <div class="tags flex flex-col  mr-24 mt-8  items-start">
         <p class="text-gray-400 mb-4">Tags</p>
-        <p><span class="px-2 py-1 rounded-full text-gray-600 shadow text-sm mr-2">HTML</span><span class="px-2 py-1 rounded-full text-gray-600 shadow text-sm mr-2">Wordpress</span><span class="px-2 py-1 rounded-full text-gray-600 shadow text-sm mr-2">PHP</span></p>
+        <p><span class="px-2 py-1 rounded-full dark:bg-yellow-200 dark:text-gray-800 text-gray-600 shadow text-sm mr-2">HTML</span><span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-800 text-sm mr-2">Wordpress</span><span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-800 text-sm mr-2">PHP</span></p>
       </div>
     </div>
     <!-- Purposely left this here for empty mark up -->
@@ -108,7 +108,7 @@
     </div>
     <div class="footer dark:bg-gray-900 transition duration-300 ease-linear flex  items-center justify-between pl-4 pr-8 py-2  shadow-md fixed bottom-0 left-0 right-0 w-screen bg-white  h-height15 xl:hidden">
       <div class="p-photo ">
-        <img class="object-contain h-full w-full" src="../../../public/assets/images/Rectangle.png" alt="olumide-okewale">
+        <img class="object-contain h-full w-full" src="../../../public/assets/images/olumide.jpg" alt="olumide-okewale">
       </div>
       <div class="p-desc mb-2   ">
         <h2 class="font-bold text-lg">Olumide Okewale</h2>
