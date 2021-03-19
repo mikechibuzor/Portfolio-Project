@@ -4,7 +4,7 @@
           <img class="h-full " src="../../../public/assets/images/Project.jpg" alt="project">
       </div>
       <div class="second ">
-          <div class="navigation absolute top-24 xl:static flex items-center cursor-pointer ">
+          <div @click="goBack" class="navigation absolute top-24 xl:static flex items-center cursor-pointer ">
               <div class="icon h-6 w-6  mr-2">   
                 <svg class="h-full w-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
@@ -45,13 +45,27 @@
                     </defs>
                 </svg>
           </div>
-          <div class="controls-container bg-white border dark:bg-yellow-200 w-full xl:w-4/5 px-4 py-6 flex justify-between shadow rounded mt-2">
-              <div class="previous">
+          <div class="controls-container bg-white border dark:bg-yellow-200 w-full xl:w-4/5 px-4 pt-1 pb-8 flex justify-between shadow rounded mt-2">
+              <div class="previous ">
+                  <div  class="left-arrow h-8 w-8 cursor-pointer  ">
+                    <router-link :to="prevLink">
+                        <svg class="h-full w-full  transition-all duration-300 ease-linear" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                        </svg>
+                    </router-link>
+                    </div>  
                   <p class="dark:text-gray-900 font-bold">Playroom application: <br />
                       Electronic app
                   </p>
               </div>
-              <div class="next">
+              <div class="next grid">
+                  <div @click="nextProject" class="right-arrow  h-8 w-8 cursor-pointer  justify-self-end ">
+                      <router-link :to="nextLink">
+                          <svg class="h-full w-full  transition-all duration-300 ease-linear" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </router-link>
+                  </div>
                   <p  class="dark:text-gray-900 font-bold">Playroom application: <br />
                       Electronic app
                   </p>
@@ -69,20 +83,66 @@ export default {
     data(){
         return{
             projObject: null,
+            prevLink: null,
+            nextLink: null,
         }
     },
 
+    methods:{
+        goBack(){
+            this.$router.go(-1);
+        },
+        previousLink(router){
+            let paramId = +router.params.id;
+            if(paramId > 1){
+                paramId -= 1;
+                this.prevLink = `/projects/${paramId}`
+                return this.prevLink ;
+            }
+            this.prevLink = `/projects/${paramId}`;
+            return this.prevLink;
+        },
+        linkNext(router){
+             let paramId = +router.params.id;
+            if(paramId < this.projectLength){
+                paramId += 1;
+                this.nextLink = `/projects/${paramId}`
+                return this.nextLink ;
+            }
+            this.nextLink = `/projects/${paramId}`;
+            return this.nextLink;
+        },
+
+    },
+
     computed:{
-        ...mapGetters({ projects: 'getProjects' }),
+        ...mapGetters({ projects: 'getProjects', projectLength: 'getNumberOfProjects'}),
+
+    },
+    watch:{
+        $route(newRoute, oldRoute){
+       
+            if(+oldRoute.params.id > +newRoute.params.id){
+                this.projObject = this.projects.find( project => project.id === this.$route.params.id);
+                this.previousLink(newRoute);                
+            }
+            if(+oldRoute.params.id < +newRoute.params.id){
+                this.projObject = this.projects.find( project => project.id === this.$route.params.id);
+                this.linkNext(newRoute);              
+            }
+            
+        }
     },
     created(){    
-        this.projObject = this.projects.find( project => project.id === this.id);
+        this.projObject = this.projects.find( project => project.id === this.$route.params.id);
+        this.previousLink(this.$route);
+        this.linkNext(this.$route);
     }
 }
 </script>
 
 <style scoped>
-    svg {
+    .icon svg {
         fill: #1B45DC;
         stroke: #1B45DC;
     }
@@ -98,5 +158,9 @@ export default {
     html.dark .controls-container{
         border: none;
         box-shadow: 0 4px 4px 4px rgba(17, 24, 39, var(--tw-text-opacity));
+    }
+
+    .right-arrow svg:hover, .left-arrow svg:hover{
+        fill: blue;
     }
 </style>

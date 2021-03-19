@@ -4,11 +4,11 @@ export default {
       projects: [
         {
           id: "1",
-          nameOfProject: "Koncise Designs Patterns",
+          nameOfProject: "Koncise Designs Patterns 1",
           aboutProject: `I started out as a freelance graphics designer before moving into web then fully into UX design. My first was as a PHP web developer. My primary responsiblity was to design and code web apps. Basically converting the user interface designs into HTML/CSS and some Jquery and also work on php/mysql`,
           techStack: [
             {
-              nameoftech: "JavaScript",
+              nameoftech: "React",
               imageUrl: "",
             },
           ],
@@ -16,11 +16,11 @@ export default {
         },
         {
           id: "2",
-          nameOfProject: "Koncise Designs Patterns",
+          nameOfProject: "Koncise Designs Patterns 2",
           aboutProject: `I started out as a freelance graphics designer before moving into web then fully into UX design. My first was as a PHP web developer. My primary responsiblity was to design and code web apps. Basically converting the user interface designs into HTML/CSS and some Jquery and also work on php/mysql`,
           techStack: [
             {
-              nameoftech: "JavaScript",
+              nameoftech: "PHP",
               imageUrl: "",
             },
           ],
@@ -28,11 +28,11 @@ export default {
         },
         {
           id: "3",
-          nameOfProject: "Koncise Designs Patterns",
+          nameOfProject: "Koncise Designs Patterns 3",
           aboutProject: `I started out as a freelance graphics designer before moving into web then fully into UX design. My first was as a PHP web developer. My primary responsiblity was to design and code web apps. Basically converting the user interface designs into HTML/CSS and some Jquery and also work on php/mysql`,
           techStack: [
             {
-              nameoftech: "JavaScript",
+              nameoftech: "WordPress",
               imageUrl: "",
             },
           ],
@@ -40,11 +40,11 @@ export default {
         },
         {
           id: "4",
-          nameOfProject: "Koncise Designs Patterns",
+          nameOfProject: "Koncise Designs Patterns 4",
           aboutProject: `I started out as a freelance graphics designer before moving into web then fully into UX design. My first was as a PHP web developer. My primary responsiblity was to design and code web apps. Basically converting the user interface designs into HTML/CSS and some Jquery and also work on php/mysql`,
           techStack: [
             {
-              nameoftech: "JavaScript",
+              nameoftech: "React",
               imageUrl: "",
             },
           ],
@@ -57,6 +57,9 @@ export default {
   getters: {
     getProjects(state) {
       return state.projects;
+    },
+    getNumberOfProjects(state) {
+      return state.projects.length;
     },
   },
   actions: {},
