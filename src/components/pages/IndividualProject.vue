@@ -94,7 +94,7 @@ export default {
         },
         previousLink(router){
             let paramId = +router.params.id;
-            if(paramId > 1){
+            if( paramId > 1){
                 paramId -= 1;
                 this.prevLink = `/projects/${paramId}`
                 return this.prevLink ;
@@ -103,8 +103,8 @@ export default {
             return this.prevLink;
         },
         linkNext(router){
-             let paramId = +router.params.id;
-            if(paramId < this.projectLength){
+            let paramId = +router.params.id;
+            if( paramId < this.projectLength){
                 paramId += 1;
                 this.nextLink = `/projects/${paramId}`
                 return this.nextLink ;
@@ -120,17 +120,10 @@ export default {
 
     },
     watch:{
-        $route(newRoute, oldRoute){
-       
-            if(+oldRoute.params.id > +newRoute.params.id){
-                this.projObject = this.projects.find( project => project.id === this.$route.params.id);
-                this.previousLink(newRoute);                
-            }
-            if(+oldRoute.params.id < +newRoute.params.id){
-                this.projObject = this.projects.find( project => project.id === this.$route.params.id);
-                this.linkNext(newRoute);              
-            }
-            
+        $route(newRoute){
+            this.projObject = this.projects.find( project => project.id === this.$route.params.id);
+            this.previousLink(newRoute);
+            this.linkNext(newRoute);                
         }
     },
     created(){    
