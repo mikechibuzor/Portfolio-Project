@@ -72,7 +72,7 @@
     </div>
     <div class="second col-span-1 ">
       <div class="text md:-mt-36 xl:mt-o">
-        <h1 class="text-2xl text-center xl:text-left md:text-4xl xl:text-3xl font-bold mb-2">Hello, I'm Olumide Okewale</h1>
+        <h1 class="text-2xl name text-center xl:text-left md:text-4xl xl:text-3xl font-bold mb-2">Hello, I'm Olumide Okewale</h1>
         <h3 class="text-lg text-center xl:text-left xl:text-xl font-bold dark:text-yellow-400 text-gray-700 mb-3">Software and DevOps Engineer</h3>
         <p class="text-center xl:text-justify leading-relaxed text-sm dark:text-yellow-50 text-gray-500 ">I started out as a freelance graphics designer before moving into web then fully into UX design. My first 
           was as a PHP web developer. My primary responsiblity was to design and code web pages.
@@ -191,6 +191,54 @@ export default {
     width: 30vh;
  
   }
+  }
+
+/* Fixing responsiveness on screens */
+  @media screen and (height: 960px){
+    .first .smedia-icons{
+      padding: 0 7rem;
+      margin-bottom: -1.5rem;
+    }
+
+    .first .smedia-icons .icon{
+      height: 2rem;
+      width: 2rem;
+    }
+    .second {
+      margin-top: -4rem;
+     
+    }
+
+    .second .name{
+      font-size: 2rem;
+      line-height: 2.6rem;
+    }
+
+    .second  h3{
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .second p{
+      font-size: 1.25rem;
+    }
+  }
+
+  @media screen and (width: 320px){
+    .first{
+      margin-top: 4rem;
+    }
+
+    .first .smedia-icons{
+      padding: 0 4rem;
+
+    }
+
+    .second{
+      margin-top: 6rem;
+    }
+
+
   }
 
   
