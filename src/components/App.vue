@@ -1,7 +1,11 @@
 <template>
   <the-header></the-header>
   <main>
-    <router-view></router-view>
+    <router-view v-slot="slotProps">
+      <transition name="route" mode="in-out">
+        <component :is="slotProps.Component"></component>
+      </transition>
+    </router-view>
   </main>
   
  
@@ -45,11 +49,34 @@ export default {
   font-family: 'Quicksand', sans-serif;
  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   /* text-align: center; */
   overflow-x: hidden;
   /* background-image: url('../../public/assets/images/BG.jpg'); */
   background-repeat: no-repeat;
   position: relative;
+}
+
+.route-enter-from{
+  opacity: 0;
+  transform: translateY(-.4rem);
+}
+.route-leave-to{
+  opacity: 0;
+  transform: translateY(4rem);
+}
+
+.route-enter-active{
+  transition: all .3s ease-out;
+}
+.route-leave-active{
+    transition: all .3s ease-in;
+}
+
+.route-enter-to,
+.route-leave-from{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 

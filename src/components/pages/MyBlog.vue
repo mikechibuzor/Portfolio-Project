@@ -209,8 +209,8 @@ export default {
   }
 
   .p-photo{
-    height: 5rem;
-    width: 3.5rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
   }
 
