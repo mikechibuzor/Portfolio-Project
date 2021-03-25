@@ -41,13 +41,13 @@ export default {
         if(this.activeFilters.all){
           return true;
         }
-        if(this.activeFilters.react && project.techStack.forEach( tech => tech.nameoftech === 'React')){
+        if(this.activeFilters.react && project.techStack.find( tech => tech.nameoftech === 'React')){
           return true;
         }
-        if(this.activeFilters.wordpress && project.techStack.forEach( tech => tech.nameoftech === 'PHP')){
+        if(this.activeFilters.wordpress && project.techStack.find( tech => tech.nameoftech === 'PHP')){
           return true;
         }
-        if(this.activeFilters.php && project.techStack.forEach( tech => tech.nameoftech === 'PHP')){
+        if(this.activeFilters.php && project.techStack.find( tech => tech.nameoftech === 'WordPress')){
           return true;
         }
         return false;
@@ -58,8 +58,7 @@ export default {
   methods:{
     setFilter(updatedFilters){
       this.activeFilters = updatedFilters;
-      console.log(this.activeFilters);
-    }
+    },
   }
 }
 

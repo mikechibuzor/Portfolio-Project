@@ -13,7 +13,7 @@ export default {
   data(){
     return{
       filters:{
-        all: true,
+        all: false,
         react: false,
         wordpress: false,
         php: false
@@ -27,6 +27,10 @@ export default {
     },
     setFilter(event){
       const buttonClicked = event.target.id;
+<<<<<<< HEAD
+=======
+      const isActive = !this.filters[buttonClicked];
+>>>>>>> filter
       const updatedFilters = {
         all: false,
         react: false,
@@ -34,6 +38,7 @@ export default {
         php: false,
         [buttonClicked]: !this[buttonClicked],
       }
+<<<<<<< HEAD
       this.$emit('change-filter', updatedFilters);
   
   }
@@ -41,6 +46,10 @@ export default {
   computed:{
     activeAll(){
       return { active: this.filters.all}
+=======
+      this.$emit('change-filter', updatedFilters)
+      
+>>>>>>> filter
     }
   }
 }
