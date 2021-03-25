@@ -240,6 +240,5 @@ export default {
 
 
   }
-
   
 </style>
