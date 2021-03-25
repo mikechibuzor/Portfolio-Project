@@ -13,7 +13,7 @@ export default {
   data(){
     return{
       filters:{
-        all: true,
+        all: false,
         react: false,
         wordpress: false,
         php:false
@@ -23,16 +23,11 @@ export default {
   methods: {
     setFilter(event){
       const buttonClicked = event.target.id;
-      console.log(this.all)
-      const isActive = this[buttonClicked];
-      console.log(isActive);
-      this[buttonClicked] = !isActive;
+      const isActive = !this.filters[buttonClicked];
       const updatedFilters = {
         ...this.filters,
         [buttonClicked]: isActive
       }
-      this.filters = updatedFilters;
-      console.log(buttonClicked);
       this.$emit('change-filter', updatedFilters)
       
     }
