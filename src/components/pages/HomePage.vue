@@ -1,6 +1,7 @@
 <template>
   <swiper
     effect="fade"
+    :autoplay="{ delay: '5000'}"
     :slides-per-view="1"
     :space-between="50"
     navigation
@@ -13,9 +14,10 @@
   </swiper>
 </template>
 <script>
+
 import TheSlide from '../layout/TheSlide.vue';
 import { mapGetters } from 'vuex';
-import SwiperCore, { Navigation, Pagination, EffectCube  } from 'swiper';
+import SwiperCore, { Navigation, Pagination, EffectCube, Autoplay  } from 'swiper';
   // Import Swiper Vue.js components
   import { Swiper, SwiperSlide } from 'swiper/vue';
 
@@ -26,7 +28,7 @@ import SwiperCore, { Navigation, Pagination, EffectCube  } from 'swiper';
   import 'swiper/components/pagination/pagination.scss';
 
   // install Swiper modules
-  SwiperCore.use([Navigation, Pagination, EffectCube,]);
+  SwiperCore.use([Navigation, Pagination, EffectCube, Autoplay]);
   export default {
     components: {
       Swiper,
