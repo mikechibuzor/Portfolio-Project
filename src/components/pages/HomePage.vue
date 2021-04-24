@@ -16,6 +16,7 @@
 import TheSlide from '../layout/TheSlide.vue';
 import { mapGetters } from 'vuex';
 import SwiperCore, { Navigation, Pagination, EffectCube  } from 'swiper';
+
   // Import Swiper Vue.js components
   import { Swiper, SwiperSlide } from 'swiper/vue';
 
@@ -27,6 +28,7 @@ import SwiperCore, { Navigation, Pagination, EffectCube  } from 'swiper';
 
   // install Swiper modules
   SwiperCore.use([Navigation, Pagination, EffectCube,]);
+  
   export default {
     components: {
       Swiper,

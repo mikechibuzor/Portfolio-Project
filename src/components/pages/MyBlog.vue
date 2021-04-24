@@ -14,7 +14,7 @@
       <h2 class="text-xl dark:text-gray-900 font-bold mt-4">Olumide Okewale</h2>
       <p class="text-gray-800 font-bold">Software Engineer</p>
       <div class="sm-icons mt-6 flex items-center justify-center">
-                <a href="#" class="mr-4">
+                <a href="https://github.com/codepriezt" class="mr-4" target="_blank">
                     <div class="icon h-5 w-5 md:h-10 md:w-10 xl:h-6 xl:w-6">
                         <svg class="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0)">
@@ -28,7 +28,7 @@
                         </svg>
                     </div>
                 </a>
-                <a href="#" class="mr-4">
+                <a href="https://twitter.com/codepriezt" class="mr-4" target="_blank">
                 <div class="icon h-7 w-7 md:h-12 md:w-12 xl:w-7 xl:h-7">
                     
                     <svg class="w-full h-full" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@
 
                 </div>
                 </a>
-                <a href="#" class="mr-4">
+                <a href="https://linkedin.com/in/olumide-okewale" class="mr-4" target="_blank">
                 <div class="icon h-5 w-5 md:h-10 md:w-10 xl:h-6 xl:w-6">
                     
                     <svg class="w-full h-full"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@
 
                 </div>
                 </a>
-                <a href="#" class="">
+                <!-- <a href="#" class="">
                 <div class="icon h-5 w-5 md:h-10 md:w-10 xl:h-6 xl:w-6">
                     
                     <svg class="w-full h-full"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,16 +76,16 @@
                     </svg>
 
                 </div>
-                </a>
+                </a> -->
       </div>
       </div>
       <div class="news-letter border shadow-sm px-5 py-4 mt-8 dark:bg-yellow-200 bg-white rounded  ">
         <p class="text-lg font-bold dark:text-gray-700">Subscribe to our newsletter</p>
         <i class="text-sm font-medium dark:text-gray-700">I am not going to spam you, i promise</i>
 
-        <form action="#" class="mt-8">
+        <form @submit.prevent="submit" class="mt-8">
          <div class="form-element flex border-b pb-2">
-            <input type="email" name="email" class="outline-none mr-2 w-full dark:bg-yellow-50" placeholder="Enter you email address" />
+            <input type="email" name="email" v-model="email" class=" text-sm outline-none mr-2 w-full dark:bg-yellow-50" placeholder="Enter you email address" />
             <button type="submit" class="bg-text-color dark:bg-yellow-600 hover:bg-black transition duration-150 h-6 w-12 flex items-center justify-center px-4 py-2  rounded-full">
                 <span class="flex items-center justify-center" >
                     <svg class="h-full flex items-center w-4 ml-2 transform -rotate-90 transition duration-150  " viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,13 +93,35 @@
                     </svg>
                 </span>
             </button>
-              
-         </div>        
+               
+         </div>  
+           <div class="mt-3">
+             <span v-if="error_message" class="text-sm font-medium dark:text-gray-400">Email value cant' be empty</span>
+             <span v-if="validateEmail" class="text-sm font-medium dark:text-gray-400">Invalid email Format</span>
+             <span v-if="success_message" class="text-sm font-medium dark:text-gray-400">Thank You for Subscribing</span>  
+           </div>      
         </form>
       </div>
       <div class="tags flex flex-col  mr-24 mt-8  items-start">
         <p class="text-gray-400 mb-4">Tags</p>
-        <p><span class="px-2 py-1 rounded-full dark:bg-yellow-200 dark:text-gray-900 font-bold text-gray-600 shadow text-sm mr-2">HTML</span><span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">Wordpress</span><span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">PHP</span></p>
+        <p>
+        <span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">LARAVEL</span>
+        <span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">NODEJS</span>
+        <span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">VUEJS</span>
+        <span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">MYSQL</span>
+      </p>
+      
+      <p class="mt-5">
+        <span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">CYPHER</span>
+        <span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">WORDPRESS</span>
+        <span class="px-2 py-1 rounded-full dark:bg-yellow-200 dark:text-gray-900 font-bold text-gray-600 shadow text-sm mr-2">PHP</span>
+      </p>
+      
+      <p class="mt-5">
+        <span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">JAVASCRIPT</span>
+        <span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">TYPESCRIPT</span>
+        <span class="px-2 py-1 rounded-full text-gray-600 shadow dark:bg-yellow-200 dark:text-gray-900 font-bold text-sm mr-2">AWS</span>
+      </p>
       </div>
     </div>
     <!-- Purposely left this here for empty mark up -->
@@ -115,7 +137,7 @@
         <p class="text-xs text-gray-500">Software Developer</p>
       </div>
        <div class="sm-icons flex items-center justify-center ">
-          <a href="#" class="mr-4">
+          <a href="https://github.com/codepriezt" target="_blank" class="mr-4">
               <div class="icon h-5 w-5 md:h-10 md:w-10 xl:h-6 xl:w-6">
                   <svg class="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
@@ -129,7 +151,7 @@
                   </svg>
               </div>
           </a>
-          <a href="#" class="mr-4">
+          <a href="https://twitter.com/codepriezt" class="mr-4" target="_blank">
           <div class="icon h-7 w-7 md:h-12 md:w-12 xl:w-7 xl:h-7">
               
               <svg class="w-full h-full" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +173,7 @@
 
           </div>
           </a>
-          <a href="#" class="mr-4">
+          <a href="https://linkedin.com/in/olumide-okewale" class="mr-4" target="_blank">
           <div class="icon h-5 w-5 md:h-10 md:w-10 xl:h-6 xl:w-6">
               
               <svg class="w-full h-full"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,7 +184,7 @@
 
           </div>
           </a>
-          <a href="#" class="">
+          <!-- <a href="#" class="">
           <div class="icon h-5 w-5 md:h-10 md:w-10 xl:h-6 xl:w-6">
               
               <svg class="w-full h-full"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -177,7 +199,7 @@
               </svg>
 
           </div>
-          </a>
+          </a> -->
       </div>
     </div>
   </div>
@@ -185,8 +207,63 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import utils from '@/utilClasses/utils';
+import storage from '@/utilClasses/data';
 import BlogPost from '../layout/BlogPost.vue';
 export default {
+  
+  data(){
+    return{
+      email:null,
+      is_loading:false,
+      error_message :false,
+      validateEmail:false,
+      service:null,
+      success_message:false
+    }
+  },
+  
+  methods:{
+        submit(){
+          this.success_message = false
+            if(this.email == null ){
+                this.error_message = true 
+                
+                return false;    
+            }
+            
+            
+            
+            //check email validation
+            var checkEmail = utils.isEmail(this.email)
+            
+            if(!checkEmail){
+                this.validateEmail = true
+                this.is_loading = false
+                return false
+             }
+             
+             //check if the error_message and validateEmail is true
+             this.validateEmail = false
+             this.error_message = false
+             
+             
+             this.is_loading = true
+             
+             
+             try{
+                   var save  =  this.service.save(this.email) 
+                   
+             }catch(error){
+               return false 
+             }
+             
+             save == true ? this.success_message = true : this.success_message = false
+             this.is_loading = false
+             this.email = null
+             
+        }
+  },
 
   components:{
     BlogPost,
@@ -194,6 +271,11 @@ export default {
 
   computed:{
     ...mapGetters({ blogs: 'getBlog' })
+  },
+  
+  mounted(){
+    this.service = new storage()
+  
   }
 
 }

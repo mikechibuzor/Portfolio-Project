@@ -5,7 +5,7 @@
         <img class="h-full w-full" :src="publicPath + '' +slidesObj.imageUrl" alt="olumide-okewale">
       </div>
       <div class="smedia-icons absolute -bottom-16 md:-bottom-28 xl:-bottom-16 flex items-center justify-between  px-20 md:flex   md:px-32 w-full md:w-full xl:w-4/5">
-        <a href="#">
+        <a href="https://github.com/codepriezt" target="_blank">
           <div class="icon h-6 w-6 md:h-10 md:w-10 xl:h-6 xl:w-6">
             <svg class="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
@@ -19,7 +19,7 @@
             </svg>
         </div>
         </a>
-        <a href="#">
+        <a href="https://twitter.com/codepriezt" target="_blank">
           <div class="icon h-7 w-7 md:h-12 md:w-12 xl:w-7 xl:h-7">
             
             <svg class="w-full h-full" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@
 
           </div>
         </a>
-        <a href="#">
+        <a href="https://linkedin.com/in/olumide-okewale"  target="_blank">
           <div class="icon h-6 w-6 md:h-10 md:w-10 xl:h-6 xl:w-6">
             
             <svg class="w-full h-full"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +52,7 @@
 
           </div>
         </a>
-        <a href="#">
+        <!-- <a href="#">
           <div class="icon h-6 w-6 md:h-10 md:w-10 xl:h-6 xl:w-6">
             
             <svg class="w-full h-full"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +67,7 @@
             </svg>
 
           </div>
-        </a>
+        </a> -->
       </div>
     </div>
     <div class="second col-span-1 ">
