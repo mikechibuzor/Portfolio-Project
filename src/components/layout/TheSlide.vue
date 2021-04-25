@@ -71,7 +71,7 @@
       </div>
     </div>
     <div class="second col-span-1 ">
-      <div class="text md:-mt-36 xl:mt-o">
+      <div class="text md:-mt-36 xl:mt-0">
         <h1 class="text-2xl name text-center xl:text-left md:text-4xl xl:text-3xl font-bold mb-2">{{ slidesObj.text.firstHeader }}</h1>
         <h3 class="text-lg text-center xl:text-left xl:text-xl font-bold dark:text-yellow-400 text-gray-700 mb-3">{{ slidesObj.text.secondHeader }}</h3>
         <p class="text-center xl:text-justify leading-relaxed text-sm dark:text-yellow-50 text-gray-500 ">{{ slidesObj.text.description }}
@@ -199,6 +199,7 @@ export default {
   }
 
 /* Fixing responsiveness on screens */
+
   @media screen and (height: 960px){
     .first .smedia-icons{
       padding: 0 7rem;
@@ -229,7 +230,37 @@ export default {
     }
   }
 
+  @media screen and (height: 667px){
+    .second .text{
+      margin-top: 2rem;
+    }
+  }
+  @media screen and (width: 360px){
+    .container{
+      height: auto;
+    }
+
+    .first{
+      margin-top: 2rem;
+    }
+
+    .second .text{
+      margin-top: 6rem;
+    }
+
+     .techStack{
+      margin-bottom: 5rem;
+    }
+  }
   @media screen and (width: 320px){
+
+    .container{
+      height: auto;
+    }
+
+    .techStack{
+      margin-bottom: 3rem;
+    }
     .first{
       margin-top: 4rem;
     }

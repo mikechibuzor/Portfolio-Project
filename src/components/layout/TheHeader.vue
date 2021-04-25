@@ -27,12 +27,22 @@ export default {
     methods:{
       checkDocumentObject(){
             const docScrollTop = document.documentElement.scrollTop;
+            const mobileScreenCheck = window.innerWidth;
            
-            if(docScrollTop > 100){
+            if(mobileScreenCheck > 768){
+              if(docScrollTop > 100){
                 this.fixedHeader = true;
             }
-            else{
+              else{
                 this.fixedHeader = false;
+              }
+            }else{
+              if(docScrollTop > 150){
+                this.fixedHeader = true;
+            }
+              else{
+                this.fixedHeader = false;
+              }
             }
         },
 
