@@ -599,9 +599,9 @@ static isValidlat(lat){
     return (string.constructor == Array || string instanceof Array);
   }
   static isStringLike(str) {
-    if (str && typeof str.valueOf() === "string") {
-      return true;
-    }
+    if (str && typeof str.valueOf() === "string") {    
+        return true;
+      }
     return false;
     // console.log(false)
 

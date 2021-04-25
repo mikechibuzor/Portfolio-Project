@@ -9,7 +9,7 @@ export default {
             firstHeader: "Hello, I'm Olumide Okewale",
             secondHeader: "FullStack Software Engineer",
             description:
-              "I am Olumide Okewale, a Software Engineer by profession. My career started out in 2017 just after the completion of training at HIIT. Since then I have worked in a number of companies handling different projects.I worked at CredPal for a little over year.After my time at CredPal, I joined Energy360 Africa in 2020 as a fullStack engineer and i improved on many of my skill set. It is important I mention some of the cool things we do at Energy360 Africa and how it has impacted my knowledge. Energy360 Africa is an indigenous tech solutions company that uses the latest software technology to solve issues in the Nigeria downstream industry. As pioneers of this type of technology in Nigeria, there is a high level of knowledge sharing session and product journeying that goes into each product.",
+              "I am Olumide Okewale, a Software Engineer by profession. My career started out in 2017 just after the completion of training at HIIT. Since then I have worked in a number of companies handling different projects.I worked at CredPal for a little over year.After my time at CredPal, I joined Energy360 Africa in 2020 as a fullStack engineer."
           },
         },
         // {
