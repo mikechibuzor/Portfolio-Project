@@ -2,19 +2,31 @@
     <div class="cont px-8 xl:px-16 h-height90 py-10 grid grid-cols-2">
         <div class="first col-span-2 xl:col-span-1">
             <h1 class="text-4xl font-bold">Contact me</h1>
-            <form class="mt-8 w-full xl:w-4/5  " action="#">
+            <form class="mt-8 w-full xl:w-4/5"  @submit.prevent="submit">
                 <div class="form-element flex flex-col mb-10 ">
                     <label class="text-gray-600 text-lg dark:text-yellow-200" for="fullname">Fullname</label>
-                    <input class="outline-none border-b py-2  bg-transparent" type="text" id="fullname" placeholder="Olumide Okewale" />
+                    <input class="outline-none border-b py-2  bg-transparent" type="text" id="fullname"  v-model="name" placeholder="Olumide Okewale" />
+                </div>
+                <div class=" mb-2">
+                    <span class="text-sm font-medium dark:text-gray-400"  v-if="handler.input_type == 'name' && handler.show == true ">{{handler.message}}</span>
                 </div>
                 <div class="form-element flex flex-col mb-10">
                     <label class="text-gray-600 text-lg dark:text-yellow-200" for="email">Email address</label>
-                    <input class="outline-none border-b py-2 bg-transparent" type="email" id="email" placeholder="kolumde22@gmail.com" />
+                    <input class="outline-none border-b py-2 bg-transparent" type="email" v-model="email" id="email" placeholder="kolumde22@gmail.com" />
+                </div>
+                <div class="mb-3 mt-3">
+                    <span class="text-sm font-medium dark:text-gray-400"  v-if="handler.input_type == 'email' && handler.show == true">{{handler.message}}</span>
                 </div>
                 <div class="form-element flex flex-col ">
                     <label for="message" class="text-gray-600 text-lg  dark:text-yellow-200">Message</label>
-                    <textarea class="w-full outline-none bg-transparent border-b pt-3" rows="5" placeholder="Say something to me">
+                    <textarea class="w-full outline-none bg-transparent border-b pt-3" v-model="message" rows="5" placeholder="Say something to me">
                     </textarea>
+                </div>
+                <div class="mt-2 mb-3">
+                    <span v-if="handler.input_type == 'message'  && handler.show == true " class="text-sm font-medium dark:text-gray-400">{{handler.message}}</span>
+                </div>
+                <div class="mt-2 mb-2">
+                    <span v-if="success_message" class="text-sm font-medium dark:text-gray-400">Thank You for Contacting Olumide Okewale.. I Will Be In Touch Shortly. </span>
                 </div>
                 <div class="form-element flex justify-end items-center py-10">
                     <button type="submit" class="bg-text-color dark:bg-yellow-500 hover:bg-black transition duration-150 h-8 w-32 flex items-center justify-center px-1 py-6  rounded-full">
@@ -26,11 +38,12 @@
                         </span>
                     </button>
                 </div>
+              
             </form>
         </div>
         <div class="second col-span-2 flex flex-col xl:block items-center justify-center xl:col-span-1 py-8 xl:py-32 ">
             <div class="sm-icons mb-12 flex">
-                <a href="#" class="mr-8">
+                <a href="https://github.com/codepriezt" class="mr-8" target="_blank">
                     <div class="icon h-6 w-6 md:h-10 md:w-10 xl:h-6 xl:w-6">
                         <svg class="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0)">
@@ -44,7 +57,7 @@
                         </svg>
                     </div>
                 </a>
-                <a href="#" class="mr-8">
+                <a href="https://twitter.com/codepriezt"  class="mr-8" target="_blank">
                 <div class="icon h-7 w-7 md:h-12 md:w-12 xl:w-7 xl:h-7">
                     
                     <svg class="w-full h-full" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +79,7 @@
 
                 </div>
                 </a>
-                <a href="#" class="mr-8">
+                <a href="https://linkedin.com/in/olumide-okewale" class="mr-8" target="_blank">
                 <div class="icon h-6 w-6 md:h-10 md:w-10 xl:h-6 xl:w-6">
                     
                     <svg class="w-full h-full"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +90,7 @@
 
                 </div>
                 </a>
-                <a href="#" class="mr-8">
+                <!-- <a href="#" class="mr-8">
                 <div class="icon h-6 w-6 md:h-10 md:w-10 xl:h-6 xl:w-6">
                     
                     <svg class="w-full h-full"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,19 +105,130 @@
                     </svg>
 
                 </div>
-                </a>
+                </a> -->
             </div>
             <div class="">
                 <p>You can also say hi to me here</p>
-                <a class="underline font-bold ml-4 dark:text-yellow-500" href="mailto:iwuagwuchibuzor@gmail.com">kolumide22@gmail.com</a>
+                <a class="underline font-bold ml-4 dark:text-yellow-500" href="mailto:kolumide22@gmail.com">kolumide22@gmail.com</a>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-export default {
 
+import utils from '@/utilClasses/utils';
+import storage from '@/utilClasses/data';
+export default {
+    data(){
+        return{
+            name:null,
+            service:null,
+            email:null,
+            message:null,
+            handler:{
+                type:null,
+                message:null,
+                input_type:null,
+                show:false    
+            },
+            success_message : false,
+            is_loading:false
+        }
+    },
+    
+    
+    methods:{
+        submit(){
+            
+            //default the success_message to false
+            this.setToDefault();
+            
+            if (!this.validate(this.name , this.email , this.message )) {
+                return false
+            }
+            
+            this.is_loading = true
+            
+            try{
+                var submit = this.service.save_contact(this.name , this.email , this.message)
+                    
+            }catch(error ){
+                return false;
+            }
+            console.log(submit)
+             submit == true ? this.success_message = true : this.success_message = false
+             
+             this.is_loading = false 
+        },
+        
+        
+        
+        setToDefault(){
+          //on click set handler  back to default
+          this.handler = {
+              type:null,
+              message:null,
+              input_type:null,
+              show:false     
+          }  
+          
+          //set the success_to default as well 
+          this.success_message = false
+        },
+        
+        
+        validate(name  , email , message){
+            if(typeof(name) == 'number'){
+                this.handler = {
+                    type:"error",
+                    message:"Invalid Name Format",
+                    input_type:"name",
+                    show:true
+                } 
+                 
+                return false
+            }
+            
+           
+            if(!(utils.isStringLike(name))){
+                    this.handler = {
+                        type:"error",
+                        message:"Name Input Is Required",
+                        input_type:"name",
+                        show:true
+                    }   
+                return false  
+            }
+                
+            if(!(utils.isStringLike(email))){
+                    this.handler = {
+                        type:"error",
+                        message:"Email Input Is Required",
+                        input_type:"email",
+                        show:true
+                    }
+                   return false  
+              }
+            
+        
+            if(!(utils.isStringLike(message))){
+                this.handler = {
+                    type:"error",
+                    message:"Message Input Is Required",
+                    input_type:"message",
+                    show:true
+                }
+                return false  
+            }
+            
+            return true;
+        }
+    },
+    
+    mounted(){
+        this.service = new storage()
+    }
 }
 </script>
 

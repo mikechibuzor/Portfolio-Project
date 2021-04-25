@@ -27,7 +27,6 @@ export default {
     return{
       activeFilters:{
         all: true,
-        react: false,
         wordpress: false,
         php:false
       }
@@ -41,13 +40,10 @@ export default {
         if(this.activeFilters.all){
           return true;
         }
-        if(this.activeFilters.react && project.techStack.find( tech => tech.nameoftech === 'React')){
+        if(this.activeFilters.php && project.techStack.find( tech => tech.nameoftech === 'PHP')){
           return true;
         }
-        if(this.activeFilters.wordpress && project.techStack.find( tech => tech.nameoftech === 'PHP')){
-          return true;
-        }
-        if(this.activeFilters.php && project.techStack.find( tech => tech.nameoftech === 'WordPress')){
+        if(this.activeFilters.wordpress && project.techStack.find( tech => tech.nameoftech === 'WordPress')){
           return true;
         }
         return false;

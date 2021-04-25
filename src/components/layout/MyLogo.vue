@@ -2,36 +2,59 @@
     <div class="container order-2 xl:order-1  flex justify-center xl:justify-start  px-3 xl:px-16">
       <div class="logo   h-12 w-12">
       
-        <router-link to='/home'>
-          <svg class="h-full w-full  justify-center xl:mt-6" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d)">
-            <circle cx="40.5" cy="38.5" r="38.5" fill="white"/>
-            <circle cx="40.5" cy="38.5" r="38" stroke="#DADADA"/>
-            </g>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M43.3643 16.0005C42.502 14.6665 40.4595 14.6665 39.5972 16.0005L27.2787 35.0572C26.3755 36.4544 27.4349 38.2507 29.1623 38.2507H53.7992C55.5265 38.2507 56.586 36.4544 55.6828 35.0572L43.3643 16.0005ZM42.785 24.2053C41.9147 22.9253 39.9419 22.9253 39.0716 24.2053L34.0373 31.6091C33.0884 33.0045 34.144 34.8431 35.894 34.8431H45.9626C47.7126 34.8431 48.7682 33.0045 47.8193 31.6091L42.785 24.2053Z" fill="#333333"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.3936 43.4175C27.4211 43.4175 25.0115 45.8406 25.0115 48.8297V57.4891C25.0115 60.1075 26.8605 62.2916 29.3172 62.7931V52.077C29.3172 49.6857 31.2449 47.7472 33.6229 47.7472H48.6928C51.0707 47.7472 52.9985 49.6857 52.9985 52.077V62.7931C55.4551 62.2916 57.3041 60.1075 57.3041 57.4891V48.8297C57.3041 45.8406 54.8945 43.4175 51.922 43.4175H30.3936Z" fill="#1B45DC"/>
-            <defs>
-            <filter id="filter0_d" x="0" y="0" width="85" height="85" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-            <feOffset dx="2" dy="4"/>
-            <feGaussianBlur stdDeviation="2"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0.104718 0 0 0 0 0.271115 0 0 0 0 0.861068 0 0 0 0.1 0"/>
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-            </filter>
-            </defs>
+        <router-link to='/home' v-if="theme == 'light'">
+          <svg class="h-full w-full  justify-center xl:mt-6" version="1.0" xmlns="http://www.w3.org/2000/svg"
+           width="250.000000pt" height="250.000000pt" viewBox="0 0 250.000000 250.000000"
+           preserveAspectRatio="xMidYMid meet">
+          
+          <g transform="translate(0.000000,250.000000) scale(0.100000,-0.100000)"
+          fill="#000000" stroke="none">
+          <path d="M1758 2013 c-9 -10 -20 -30 -23 -45 -9 -33 -6 -33 -82 -7 -73 24 -95
+          17 -113 -35 -16 -51 -1 -72 68 -92 31 -10 60 -20 64 -24 17 -14 -228 -706
+          -295 -833 -51 -97 -144 -160 -281 -192 -59 -14 -73 -14 -143 0 -198 39 -377
+          174 -464 349 -40 82 -44 95 -44 165 0 63 5 86 28 132 38 78 114 154 190 189
+          133 63 237 60 407 -11 52 -22 100 -41 105 -42 6 -1 25 29 43 66 25 51 31 71
+          23 81 -18 22 -212 114 -276 131 -82 22 -263 30 -355 16 -418 -66 -631 -412
+          -495 -810 114 -335 477 -572 879 -571 131 0 221 20 323 70 190 94 272 215 349
+          519 87 339 133 421 240 421 106 0 278 -140 352 -288 46 -93 59 -161 41 -221
+          -17 -56 -81 -128 -125 -140 -75 -21 -202 46 -313 165 -34 37 -64 64 -67 62 -2
+          -3 -16 -45 -29 -94 -13 -49 -31 -109 -40 -134 -37 -103 -86 -285 -83 -309 3
+          -24 10 -27 93 -48 139 -34 126 -42 159 105 l29 127 65 -32 c166 -80 325 -60
+          400 50 33 50 52 164 41 245 -30 211 -107 362 -252 498 -108 101 -244 164 -354
+          164 -24 0 -43 1 -43 3 0 11 34 103 40 111 5 4 31 1 59 -9 61 -20 86 -10 99 38
+          14 51 1 69 -61 90 -53 17 -56 20 -46 43 23 61 1 96 -67 110 -21 4 -34 1 -46
+          -13z"/>
+          <path d="M883 1308 l-72 -73 66 -72 65 -73 61 0 61 0 -69 70 -69 70 67 68 c37
+          37 67 71 67 75 0 4 -24 7 -53 7 -52 0 -53 -1 -124 -72z"/>
+          <path d="M2005 1170 l49 -50 -44 -45 -44 -45 41 0 c35 0 46 6 83 46 l42 46
+          -48 49 c-42 42 -54 49 -88 49 l-40 0 49 -50z"/>
+          </g>
         </svg>
-        </router-link>
+      </router-link>
+        
+        
+      <router-link to='/home' v-else>
+          <img v-bind:src="'/assets/images/colored.png'"  class="h-full w-full  justify-center xl:mt-6"/> 
+      </router-link>
+        
+        
+        
 
       </div>
     </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
-
-}
+     
+      computed:{
+            ...mapGetters({
+              theme : 'getTheme',
+             })
+            
+      }
+   }
 </script>
 
 <style scopded>

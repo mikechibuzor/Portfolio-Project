@@ -1,7 +1,6 @@
 <template>
   <div ref="parent" class="mt-8 flex flex-wrap ">
       <span @click="setFilter"  class="active   text-black rounded-xl px-3 xl:px-6 py-0.5 mr-4 mb-4 cursor-pointer" id="all">All</span>
-      <span @click="setFilter" class=" bg-white shadow-sm dark:text-gray-700  text-black rounded-xl px-3 xl:px-6 py-0.5 mr-4 mb-4 cursor-pointer" id="react">React</span>
       <span @click="setFilter" class=" bg-white shadow-sm dark:text-gray-700   text-black  rounded-xl px-3 xl:px-6 py-0.5 mr-4 mb-4 cursor-pointer" id="wordpress">WordPress</span>
       <span @click="setFilter" class=" bg-white shadow-sm dark:text-gray-700    text-black  rounded-xl px-3 xl:px-6 py-0.5 mr-4 mb-4 cursor-pointer" id="php">PHP</span>
   </div>
@@ -14,7 +13,7 @@ export default {
     return{
       filters:{
         all: false,
-        react: false,
+      
         wordpress: false,
         php: false
       }
